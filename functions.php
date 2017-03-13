@@ -141,3 +141,37 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Enqueue Bootstrap CDN.
+ */
+
+function tint_blog_bootstrap() {
+    wp_enqueue_style('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css');
+    wp_enqueue_style('style', get_stylesheet_uri());
+}
+add_action('wp_enqueue_scripts', 'tint_blog_bootstrap');
+
+function tint_blog_bootstrapjs(){
+	wp_enqueue_script( 'jquerylatest', '//ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js');
+    wp_enqueue_script( 'tether-js', '//cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js');
+    wp_enqueue_script( 'bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js');
+}
+add_action('wp_enqueue_scripts','tint_blog_bootstrapjs');
+
+//enqueues our external font awesome stylesheet
+function tint_blog_fontawesome(){
+	wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'); 
+}
+add_action('wp_enqueue_scripts','tint_blog_fontawesome');
+
+//enqueues our external lightbox js and stylesheet
+function tint_blog_lightbox(){
+	wp_enqueue_style('lightbox', '//cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.min.css');
+	wp_enqueue_script( 'lightbox-js', 'https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.js');
+}
+add_action('wp_enqueue_scripts','tint_blog_lightbox');
+
+// Register Custom Navigation Walker
+require_once('wp_bootstrap_navwalker.php');
+
