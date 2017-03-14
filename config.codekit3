@@ -198,6 +198,19 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/sass\/_footer.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/_footer.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/sass\/_normalize.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -562,6 +575,91 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/sass\/typography\/fonts\/_avenir.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/typography\/fonts\/_avenir.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/typography\/fonts\/AvenirLTStd-Black.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sass\/typography\/fonts\/AvenirLTStd-Black.woff",
+		"oF": 0
+		},
+	"\/sass\/typography\/fonts\/AvenirLTStd-BlackOblique.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sass\/typography\/fonts\/AvenirLTStd-BlackOblique.woff",
+		"oF": 0
+		},
+	"\/sass\/typography\/fonts\/AvenirLTStd-Book.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sass\/typography\/fonts\/AvenirLTStd-Book.woff",
+		"oF": 0
+		},
+	"\/sass\/typography\/fonts\/AvenirLTStd-BookOblique.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sass\/typography\/fonts\/AvenirLTStd-BookOblique.woff",
+		"oF": 0
+		},
+	"\/sass\/typography\/fonts\/AvenirLTStd-Heavy.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sass\/typography\/fonts\/AvenirLTStd-Heavy.woff",
+		"oF": 0
+		},
+	"\/sass\/typography\/fonts\/AvenirLTStd-HeavyOblique.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sass\/typography\/fonts\/AvenirLTStd-HeavyOblique.woff",
+		"oF": 0
+		},
+	"\/sass\/typography\/fonts\/AvenirLTStd-Light.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sass\/typography\/fonts\/AvenirLTStd-Light.woff",
+		"oF": 0
+		},
+	"\/sass\/typography\/fonts\/AvenirLTStd-LightOblique.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sass\/typography\/fonts\/AvenirLTStd-LightOblique.woff",
+		"oF": 0
+		},
+	"\/sass\/typography\/fonts\/AvenirLTStd-Medium.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sass\/typography\/fonts\/AvenirLTStd-Medium.woff",
+		"oF": 0
+		},
+	"\/sass\/typography\/fonts\/AvenirLTStd-MediumOblique.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sass\/typography\/fonts\/AvenirLTStd-MediumOblique.woff",
+		"oF": 0
+		},
+	"\/sass\/typography\/fonts\/AvenirLTStd-Oblique.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sass\/typography\/fonts\/AvenirLTStd-Oblique.woff",
+		"oF": 0
+		},
+	"\/sass\/typography\/fonts\/AvenirLTStd-Roman.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sass\/typography\/fonts\/AvenirLTStd-Roman.woff",
+		"oF": 0
+		},
 	"\/sass\/variables-site\/_colors.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -613,91 +711,6 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
-		},
-	"\/sass\/variables-site\/fonts\/_avenir.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/sass\/variables-site\/fonts\/_avenir.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/sass\/variables-site\/fonts\/AvenirLTStd-Black.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/sass\/variables-site\/fonts\/AvenirLTStd-Black.woff",
-		"oF": 0
-		},
-	"\/sass\/variables-site\/fonts\/AvenirLTStd-BlackOblique.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/sass\/variables-site\/fonts\/AvenirLTStd-BlackOblique.woff",
-		"oF": 0
-		},
-	"\/sass\/variables-site\/fonts\/AvenirLTStd-Book.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/sass\/variables-site\/fonts\/AvenirLTStd-Book.woff",
-		"oF": 0
-		},
-	"\/sass\/variables-site\/fonts\/AvenirLTStd-BookOblique.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/sass\/variables-site\/fonts\/AvenirLTStd-BookOblique.woff",
-		"oF": 0
-		},
-	"\/sass\/variables-site\/fonts\/AvenirLTStd-Heavy.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/sass\/variables-site\/fonts\/AvenirLTStd-Heavy.woff",
-		"oF": 0
-		},
-	"\/sass\/variables-site\/fonts\/AvenirLTStd-HeavyOblique.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/sass\/variables-site\/fonts\/AvenirLTStd-HeavyOblique.woff",
-		"oF": 0
-		},
-	"\/sass\/variables-site\/fonts\/AvenirLTStd-Light.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/sass\/variables-site\/fonts\/AvenirLTStd-Light.woff",
-		"oF": 0
-		},
-	"\/sass\/variables-site\/fonts\/AvenirLTStd-LightOblique.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/sass\/variables-site\/fonts\/AvenirLTStd-LightOblique.woff",
-		"oF": 0
-		},
-	"\/sass\/variables-site\/fonts\/AvenirLTStd-Medium.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/sass\/variables-site\/fonts\/AvenirLTStd-Medium.woff",
-		"oF": 0
-		},
-	"\/sass\/variables-site\/fonts\/AvenirLTStd-MediumOblique.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/sass\/variables-site\/fonts\/AvenirLTStd-MediumOblique.woff",
-		"oF": 0
-		},
-	"\/sass\/variables-site\/fonts\/AvenirLTStd-Oblique.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/sass\/variables-site\/fonts\/AvenirLTStd-Oblique.woff",
-		"oF": 0
-		},
-	"\/sass\/variables-site\/fonts\/AvenirLTStd-Roman.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/sass\/variables-site\/fonts\/AvenirLTStd-Roman.woff",
-		"oF": 0
 		},
 	"\/screenshot.png": {
 		"ft": 32768,
