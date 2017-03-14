@@ -57,6 +57,46 @@
 		"oAP": "\/header.php",
 		"oF": 0
 		},
+	"\/img\/menu-items-copy-29.png": {
+		"ft": 32768,
+		"iS": 1257,
+		"l": 1,
+		"oA": 0,
+		"oAP": "\/img\/menu-items-copy-29.png",
+		"oF": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/menu-items-copy-29.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/menu-items-copy-29.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/menu-items-copy-29@2x.png": {
+		"ft": 32768,
+		"iS": 2503,
+		"l": 1,
+		"oA": 0,
+		"oAP": "\/img\/menu-items-copy-29@2x.png",
+		"oF": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/menu-items-copy-29@3x.png": {
+		"ft": 32768,
+		"iS": 3831,
+		"l": 1,
+		"oA": 0,
+		"oAP": "\/img\/menu-items-copy-29@3x.png",
+		"oF": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/inc\/custom-header.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -207,6 +247,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/_footer.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/_header.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/_header.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

@@ -767,44 +767,96 @@ object {
   display: block; }
 
 /*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.site-header nav {
+  background-image: -webkit-linear-gradient(357deg, #ff564b, #ff5648 49%, #fa6037);
+  background-image: linear-gradient(93deg, #ff564b, #ff5648 49%, #fa6037); }
+  .site-header nav .navbar-collapse {
+    margin-left: 40px;
+    padding-top: 10px; }
+    .site-header nav .navbar-collapse li > a {
+      font-family: "Avenir-Heavy";
+      font-size: 14px;
+      line-height: 0.86;
+      letter-spacing: 0.2px;
+      color: #fff;
+      padding: 10px 25px; }
+
+.form-inline .form-control {
+  background-color: transparent;
+  background-image: url(img/search.png);
+  background-position: 0px center;
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  cursor: pointer;
+  height: 32px;
+  margin: 0;
+  padding: 0 0 0 34px;
+  position: relative;
+  -webkit-transition: width 400ms ease, background 400ms ease;
+  transition: width 400ms ease, background 400ms ease;
+  width: 0; }
+  .form-inline .form-control:focus {
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+    box-shadow: none;
+    border-radius: 0;
+    cursor: text;
+    outline: 0;
+    width: 300px; }
+
+.form-inline .search-submit {
+  display: none;
+  border-radius: 0;
+  border: 0;
+  border-color: transparent; }
+
+.form-inline input[type="search"] {
+  -webkit-appearance: textfield; }
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 /* --- footer --- */
-footer {
+.site-footer {
   background-image: -webkit-linear-gradient(344deg, #1d3853, #264563);
   background-image: linear-gradient(106deg, #1d3853, #264563);
   padding-top: 90px; }
-  footer .footer-nav {
+  .site-footer .footer-nav {
     padding-bottom: 78px; }
-    footer .footer-nav h3 {
+    .site-footer .footer-nav h3 {
       font-family: "Avenir-Heavy";
       font-size: 14px;
       line-height: 1.71;
       color: #fff; }
-    footer .footer-nav .list-group li, footer .footer-nav .list-group li > a {
+    .site-footer .footer-nav .list-group li, .site-footer .footer-nav .list-group li > a {
       font-family: "Avenir-Book";
       font-size: 14px;
       line-height: 1.71;
       color: #fff; }
-    footer .footer-nav .list-group.right {
+    .site-footer .footer-nav .list-group.right {
       float: right; }
       @media screen and (min-width: 993px) {
-        footer .footer-nav .list-group.right li {
+        .site-footer .footer-nav .list-group.right li {
           float: left; } }
-  footer .footer {
+  .site-footer .footer {
     background-color: #1b344c;
     padding-top: 28px;
     padding-bottom: 31px;
     font-size: 14px; }
-    footer .footer p {
+    .site-footer .footer p {
       margin: 10px 0 0;
       color: #fff;
       opacity: 0.5;
       letter-spacing: 0.2px; }
-    footer .footer form {
+    .site-footer .footer form {
       color: #fff;
       opacity: 0.5; }
-    footer .footer input[type="email"], footer .footer input[type="text"] {
+    .site-footer .footer input[type="email"], .site-footer .footer input[type="text"] {
       height: 34px;
       border: 0;
       -webkit-transition: all 0.1s linear;
@@ -816,11 +868,11 @@ footer {
       margin: 0 10px;
       padding: 0;
       font-size: 14px; }
-    footer .footer input:hover, footer .footer input:focus {
+    .site-footer .footer input:hover, .site-footer .footer input:focus {
       outline: none;
       box-shadow: none;
       border-color: #ccc; }
-    footer .footer .btn-login {
+    .site-footer .footer .btn-login {
       background-color: transparent;
       outline: none;
       height: auto;
@@ -830,6 +882,6 @@ footer {
       border-radius: 0px;
       box-shadow: none;
       font-size: 12px; }
-    footer .footer .btn-login:hover,
-    footer .footer .btn-login:focus {
+    .site-footer .footer .btn-login:hover,
+    .site-footer .footer .btn-login:focus {
       color: #fff; }
