@@ -40,79 +40,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Captions
 	## Galleries
+# Footer
 --------------------------------------------------------------*/
-@font-face {
-  font-family: 'Avenir-Black';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Avenir-Black"), url("AvenirLTStd-Black.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Avenir-Book';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Avenir-Book"), url("AvenirLTStd-Book.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Avenir-Heavy';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Avenir-Heavy"), url("AvenirLTStd-Heavy.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Avenir-Light';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Avenir-Light"), url("AvenirLTStd-Light.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Avenir-Medium';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Avenir-Medium"), url("AvenirLTStd-Medium.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Avenir-Roman';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Avenir-Roman"), url("AvenirLTStd-Roman.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Avenir-Black-Oblique';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Avenir-Black-Oblique"), url("AvenirLTStd-BlackOblique.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Avenir-Book-Oblique';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Avenir-Book-Oblique"), url("AvenirLTStd-BookOblique.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Avenir-Heavy-Oblique';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Avenir-Heavy-Oblique"), url("AvenirLTStd-HeavyOblique.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Avenir-Light-Oblique';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Avenir-Light-Oblique"), url("AvenirLTStd-LightOblique.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Avenir-Medium-Oblique';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Avenir-Medium-Oblique"), url("AvenirLTStd-MediumOblique.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Avenir-Oblique';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Avenir-Oblique"), url("AvenirLTStd-Oblique.woff") format("woff"); }
-
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -291,6 +220,78 @@ th {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Avenir-Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir-Black"), url("AvenirLTStd-Black.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Avenir-Book';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir-Book"), url("AvenirLTStd-Book.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Avenir-Heavy';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir-Heavy"), url("AvenirLTStd-Heavy.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Avenir-Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir-Light"), url("AvenirLTStd-Light.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Avenir-Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir-Medium"), url("AvenirLTStd-Medium.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Avenir-Roman';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir-Roman"), url("AvenirLTStd-Roman.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Avenir-Black-Oblique';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir-Black-Oblique"), url("AvenirLTStd-BlackOblique.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Avenir-Book-Oblique';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir-Book-Oblique"), url("AvenirLTStd-BookOblique.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Avenir-Heavy-Oblique';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir-Heavy-Oblique"), url("AvenirLTStd-HeavyOblique.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Avenir-Light-Oblique';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir-Light-Oblique"), url("AvenirLTStd-LightOblique.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Avenir-Medium-Oblique';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir-Medium-Oblique"), url("AvenirLTStd-MediumOblique.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Avenir-Oblique';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir-Oblique"), url("AvenirLTStd-Oblique.woff") format("woff"); }
+
 body,
 button,
 input,
@@ -300,7 +301,7 @@ textarea {
   font-family: "Avenir-Book";
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.5; }
+  line-height: 1.57; }
 
 h1, h2, h3, h4, h5, h6 {
   clear: both; }
@@ -319,17 +320,17 @@ address {
 
 pre {
   background: #eee;
-  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-family: "Avenir-Book";
   font-size: 15px;
   font-size: 0.9375rem;
-  line-height: 1.6;
+  line-height: 1.71;
   margin-bottom: 1.6em;
   max-width: 100%;
   overflow: auto;
   padding: 1.6em; }
 
 code, kbd, tt, var {
-  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-family: "Avenir-Book";
   font-size: 15px;
   font-size: 0.9375rem; }
 
@@ -372,13 +373,10 @@ hr {
   margin-bottom: 1.5em; }
 
 ul, ol {
-  margin: 0 0 1.5em 3em; }
+  margin: 0; }
 
-ul {
-  list-style: disc; }
-
-ol {
-  list-style: decimal; }
+ul, ol {
+  list-style: none; }
 
 li > ul,
 li > ol {
@@ -767,3 +765,71 @@ object {
 
 .gallery-caption {
   display: block; }
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+/* --- footer --- */
+footer {
+  background-image: -webkit-linear-gradient(344deg, #1d3853, #264563);
+  background-image: linear-gradient(106deg, #1d3853, #264563);
+  padding-top: 90px; }
+  footer .footer-nav {
+    padding-bottom: 78px; }
+    footer .footer-nav h3 {
+      font-family: "Avenir-Heavy";
+      font-size: 14px;
+      line-height: 1.71;
+      color: #fff; }
+    footer .footer-nav .list-group li, footer .footer-nav .list-group li > a {
+      font-family: "Avenir-Book";
+      font-size: 14px;
+      line-height: 1.71;
+      color: #fff; }
+    footer .footer-nav .list-group.right {
+      float: right; }
+      @media screen and (min-width: 993px) {
+        footer .footer-nav .list-group.right li {
+          float: left; } }
+  footer .footer {
+    background-color: #1b344c;
+    padding-top: 28px;
+    padding-bottom: 31px;
+    font-size: 14px; }
+    footer .footer p {
+      margin: 10px 0 0;
+      color: #fff;
+      opacity: 0.5;
+      letter-spacing: 0.2px; }
+    footer .footer form {
+      color: #fff;
+      opacity: 0.5; }
+    footer .footer input[type="email"], footer .footer input[type="text"] {
+      height: 34px;
+      border: 0;
+      -webkit-transition: all 0.1s linear;
+      transition: all 0.1s linear;
+      box-shadow: none;
+      border-bottom: 1px solid #e7e7e7;
+      background-color: transparent;
+      border-radius: 0px;
+      margin: 0 10px;
+      padding: 0;
+      font-size: 14px; }
+    footer .footer input:hover, footer .footer input:focus {
+      outline: none;
+      box-shadow: none;
+      border-color: #ccc; }
+    footer .footer .btn-login {
+      background-color: transparent;
+      outline: none;
+      height: auto;
+      padding: 10px;
+      color: #fff;
+      border: solid 1px #fff;
+      border-radius: 0px;
+      box-shadow: none;
+      font-size: 12px; }
+    footer .footer .btn-login:hover,
+    footer .footer .btn-login:focus {
+      color: #fff; }
