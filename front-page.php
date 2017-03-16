@@ -26,20 +26,35 @@ get_header(); ?>
 		</div>
 	</div>
 
-	<div class="container">
-		<div class="row">
-			<?php query_posts('cat=1&posts_per_page=1'); ?>
-				<div class="col">
-					<h3><?php the_category(); ?></h3>
-				</div>
-			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-				<?php the_post_thumbnail( array(415, 277) ); ?>
-				<h2><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-				<p><i class="fa fa-user-o" aria-hidden="true"></i> <?php the_author(); ?> <i class="fa fa-calendar" aria-hidden="true"></i> <?php the_time('jS F'); ?></p>
-			<?php endwhile; endif; ?>
-			<?php wp_reset_query(); ?>
+<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
+		<div class="container">
+			<div class="row">
+				<?php query_posts('cat=1&posts_per_page=1'); ?>
+					<div class="col-12">
+						<h3><?php the_category(); ?></h3><hr>
+					</div>
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+					<div class="col-8">
+						<?php the_post_thumbnail( array(415, 277) ); ?>
+						<h2><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+						<p><i class="fa fa-user-o" aria-hidden="true"></i> <?php the_author(); ?> <i class="fa fa-calendar" aria-hidden="true"></i> <?php the_time('jS F'); ?></p>
+					</div>
+				<?php endwhile; endif; ?>
+				<?php wp_reset_query(); ?>
+				<?php query_posts('cat=1&posts_per_page=3&offset=1'); ?>
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+					<div class="col-4">
+						<?php the_post_thumbnail( array(118, 100), array('class' => 'alignleft') ); ?>
+						<h3><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
+						<p><i class="fa fa-user-o" aria-hidden="true"></i> <?php the_author(); ?> <i class="fa fa-calendar" aria-hidden="true"></i> <?php the_time('jS F'); ?></p>
+					</div>
+				<?php endwhile; endif; ?>
+				<?php wp_reset_query(); ?>
+			</div>
 		</div>
-	</div>
+	</main><!-- #main -->
+</div><!-- #primary -->
 <?php
 get_sidebar();
 get_footer();
