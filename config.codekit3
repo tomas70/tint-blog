@@ -45,6 +45,12 @@
 		"oAP": "\/footer.php",
 		"oF": 0
 		},
+	"\/front-page.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/front-page.php",
+		"oF": 0
+		},
 	"\/functions.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -56,6 +62,16 @@
 		"oA": 2,
 		"oAP": "\/header.php",
 		"oF": 0
+		},
+	"\/img\/loupe.png": {
+		"ft": 32768,
+		"iS": 771,
+		"l": 1,
+		"oA": 0,
+		"oAP": "\/img\/loupe.png",
+		"oF": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/img\/menu-items-copy-29.png": {
 		"ft": 32768,

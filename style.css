@@ -412,7 +412,7 @@ input[type="reset"],
 input[type="submit"] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
+  border-radius: 100px;
   background: #e6e6e6;
   color: rgba(0, 0, 0, 0.8);
   font-size: 12px;
@@ -433,6 +433,18 @@ input[type="submit"] {
   input[type="submit"]:focus {
     border-color: #aaa #bbb #bbb; }
 
+.btn-sm {
+  font-family: "Avenir-Heavy";
+  border-radius: 100px;
+  border-color: #fff;
+  padding: 0;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 0.86;
+  letter-spacing: 0.2px;
+  padding: .65em 1em;
+  color: #fff; }
+
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -449,7 +461,7 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-  color: #666;
+  color: #fff;
   border: 1px solid #ccc;
   border-radius: 3px;
   padding: 3px; }
@@ -469,7 +481,7 @@ textarea {
   input[type="datetime-local"]:focus,
   input[type="color"]:focus,
   textarea:focus {
-    color: #111; }
+    color: #fff; }
 
 select {
   border: 1px solid #ccc; }
@@ -773,9 +785,8 @@ object {
   background-image: -webkit-linear-gradient(357deg, #ff564b, #ff5648 49%, #fa6037);
   background-image: linear-gradient(93deg, #ff564b, #ff5648 49%, #fa6037); }
   .site-header nav .navbar-collapse {
-    margin-left: 40px;
-    padding-top: 10px; }
-    .site-header nav .navbar-collapse li > a {
+    margin-left: 40px; }
+    .site-header nav .navbar-collapse .navbar-nav li > a {
       font-family: "Avenir-Heavy";
       font-size: 14px;
       line-height: 0.86;
@@ -783,9 +794,9 @@ object {
       color: #fff;
       padding: 10px 25px; }
 
-.form-inline .form-control {
+.site-header .form-inline .form-control {
   background-color: transparent;
-  background-image: url(img/search.png);
+  background-image: url(img/loupe.png);
   background-position: 0px center;
   background-repeat: no-repeat;
   background-size: 22px 22px;
@@ -800,7 +811,7 @@ object {
   -webkit-transition: width 400ms ease, background 400ms ease;
   transition: width 400ms ease, background 400ms ease;
   width: 0; }
-  .form-inline .form-control:focus {
+  .site-header .form-inline .form-control:focus {
     background-color: transparent;
     border-bottom: 1px solid #fff;
     box-shadow: none;
@@ -809,13 +820,13 @@ object {
     outline: 0;
     width: 300px; }
 
-.form-inline .search-submit {
+.site-header .form-inline .search-submit {
   display: none;
   border-radius: 0;
   border: 0;
   border-color: transparent; }
 
-.form-inline input[type="search"] {
+.site-header .form-inline input[type="search"] {
   -webkit-appearance: textfield; }
 
 /*--------------------------------------------------------------
