@@ -46,10 +46,10 @@ get_header(); ?>
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 					<div class="col-6 cat-posts">
 						<div class="row">
-							<div class="col-4">
+							<div class="col">
 								<?php the_post_thumbnail(); ?>
 							</div>
-							<div class="col-8 nopadding">
+							<div class="col nopadding">
 								<h3 class="cat-posts__heading-3"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
 								<p class="cat-posts__paragraph"><span><i class="fa fa-user-o" aria-hidden="true"></i> <?php the_author_posts_link(); ?></span> <span><i class="fa fa-calendar" aria-hidden="true"></i> <?php the_time('jS F'); ?></span></p>
 							</div>
