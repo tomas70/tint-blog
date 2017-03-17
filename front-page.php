@@ -36,7 +36,7 @@ get_header(); ?>
 					</div>
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 					<div class="col-6 cat-recent-post">
-						<?php the_post_thumbnail( array(415, 277) ); ?>
+						<?php the_post_thumbnail(); ?>
 						<h2 class="cat-recent-post__heading-2"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 						<p class="cat-recent-post__paragraph"><span><i class="fa fa-user-o" aria-hidden="true"></i> <?php the_author_posts_link(); ?></span> <span><i class="fa fa-calendar" aria-hidden="true"></i> <?php the_time('jS F'); ?></span></p>
 					</div>
@@ -47,7 +47,7 @@ get_header(); ?>
 					<div class="col-6 cat-posts">
 						<div class="row">
 							<div class="col-4">
-								<?php the_post_thumbnail( array(118, 100) ); ?>
+								<?php the_post_thumbnail(); ?>
 							</div>
 							<div class="col-8 nopadding">
 								<h3 class="cat-posts__heading-3"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
