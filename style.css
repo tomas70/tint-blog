@@ -496,7 +496,8 @@ textarea {
 .content-area {
   float: left;
   margin: 0 -25% 0 0;
-  width: 100%; }
+  width: 100%;
+  padding: 0 45px; }
 
 .site-main {
   margin: 0 25% 0 0; }
@@ -504,7 +505,8 @@ textarea {
 .site-content .widget-area {
   float: right;
   overflow: hidden;
-  width: 25%; }
+  width: 25%;
+  padding: 0 20px; }
 
 .site-footer {
   clear: both;
@@ -722,6 +724,10 @@ a {
 .bypostauthor {
   display: block; }
 
+.nopadding {
+  padding-left: 0px;
+  padding-right: 0px; }
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
@@ -805,6 +811,12 @@ object {
 .site-header nav {
   background-image: -webkit-linear-gradient(357deg, #ff564b, #ff5648 49%, #fa6037);
   background-image: linear-gradient(93deg, #ff564b, #ff5648 49%, #fa6037); }
+  .site-header nav .navbar-brand {
+    margin-left: 49px; }
+    @media (max-width: 786px) {
+      .site-header nav .navbar-brand {
+        padding-left: 9px;
+        padding-right: 9px; } }
   .site-header nav .navbar-collapse {
     margin-left: 40px; }
     .site-header nav .navbar-collapse .navbar-nav li > a {
@@ -917,3 +929,107 @@ object {
     .site-footer .footer .btn-login:hover,
     .site-footer .footer .btn-login:focus {
       color: #fff; }
+
+/*--------------------------------------------------------------
+# Front Page
+--------------------------------------------------------------*/
+.jumbotron-fluid {
+  padding-left: 49px;
+  padding-right: 49px; }
+  @media (max-width: 786px) {
+    .jumbotron-fluid {
+      padding-left: 9px;
+      padding-right: 9px; } }
+
+.jumbotron__heading-1 {
+  font-family: "Avenir-Black";
+  font-size: 40px;
+  line-height: normal;
+  max-width: 741px; }
+  .jumbotron__heading-1 a {
+    color: #fff; }
+
+.jumbotron__heading-3 {
+  font-family: "Avenir-Heavy";
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  color: #fff;
+  text-align: center;
+  width: 119px;
+  padding: 9px 0;
+  background-image: -webkit-linear-gradient(345deg, #ff564b, #ff5648 49%, #fa6037);
+  background-image: linear-gradient(105deg, #ff564b, #ff5648 49%, #fa6037); }
+
+.jumbotron__paragraph, .cat-recent-post__paragraph, .cat-posts__paragraph, .cat-posts__heading-3 {
+  font-family: "Avenir-Heavy";
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  color: #fff; }
+  .jumbotron__paragraph span, .cat-recent-post__paragraph span, .cat-posts__paragraph span, .cat-posts__heading-3 span {
+    margin-right: 9px; }
+
+.strike-right, .strike-left {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap; }
+  .strike-right__heading-3 {
+    position: relative;
+    display: inline-block; }
+    .strike-right__heading-3 a {
+      font-family: "Avenir-Black";
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1.8px;
+      color: #ff564b;
+      text-decoration: none; }
+    .strike-right__heading-3:after {
+      display: inline-block;
+      content: "";
+      height: 2px;
+      background-color: #ff564b;
+      position: absolute;
+      width: 1000px;
+      left: 100%;
+      top: 50%;
+      margin-left: 15px; }
+    .strike-right__heading-3 ul {
+      margin-left: -40px; }
+
+.cat-recent-post__heading-2 {
+  font-family: "Avenir-Heavy";
+  font-size: 18px;
+  line-height: 1.5; }
+  .cat-recent-post__heading-2 a {
+    color: #2e2e31; }
+
+.cat-recent-post__paragraph, .cat-posts__paragraph {
+  font-size: 12px;
+  color: #2e2e31; }
+
+.cat-posts__heading-3 {
+  line-height: 1.36; }
+  .cat-posts__heading-3 a {
+    color: #2e2e31; }
+
+.strike-left {
+  text-align: right;
+  margin-left: 15px;
+  margin-bottom: 43px; }
+  .strike-left__see-all {
+    position: relative;
+    display: inline-block;
+    font-family: "Avenir-Heavy";
+    font-size: 16px;
+    text-transform: capitalize;
+    letter-spacing: 0.3px;
+    color: #ff564b; }
+    .strike-left__see-all:before {
+      display: inline-block;
+      content: "";
+      height: 2px;
+      background-color: #f6f6f6;
+      position: absolute;
+      width: 1000px;
+      right: 100%;
+      top: 50%;
+      margin-right: 15px; }

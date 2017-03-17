@@ -1,0 +1,124 @@
+.jumbotron-fluid {
+	padding-left: 49px;
+	padding-right: 49px;
+	@media (max-width: 786px) {
+		padding-left: 9px;
+		padding-right: 9px;
+	}
+}
+.jumbotron {
+	&__heading-1 {
+		font-family: $font__avenir-black;
+		font-size: 40px;
+		line-height: normal;
+		max-width: 741px;
+		a {
+			color: #fff;
+		}
+	}
+	&__heading-3 {
+		font-family: $font__avenir-heavy;
+		font-size: 14px;
+		letter-spacing: 0.2px;
+		color: #fff;
+		text-align: center;
+		width: 119px;
+		padding: 9px 0;
+		background-image: linear-gradient(105deg, #ff564b, #ff5648 49%, #fa6037);
+	}
+	&__paragraph {
+		font-family: $font__avenir-heavy;
+		font-size: 14px;
+		letter-spacing: 0.2px;
+		color: #fff;
+		span {
+			margin-right: 9px;
+		}
+	}
+}
+.strike-right {
+	display: block;
+    overflow: hidden;
+    white-space: nowrap;
+	&__heading-3 {
+		position: relative;
+        display: inline-block;
+	    a {
+	    	font-family: $font__avenir-black;
+			font-size: 16px;
+			text-transform: uppercase;
+			letter-spacing: 1.8px;
+	    	color: #ff564b;
+	    	text-decoration: none;
+	    }
+	    &:after {
+	    	display: inline-block;
+	    	content: "";
+	    	height: 2px;
+	    	background-color: #ff564b;
+	    	position: absolute;
+	    	width: 1000px;
+	    	left: 100%;
+	    	top: 50%;
+	    	margin-left: 15px;
+	    }
+	    ul {
+	    	margin-left: -40px;
+	    }
+	}
+}
+.cat-recent-post {
+	&__heading-2 {
+		font-family: $font__avenir-heavy;
+		font-size: 18px;
+		line-height: 1.5;
+		a {
+			color: #2e2e31;
+		}
+	}
+	&__paragraph {
+		@extend .jumbotron__paragraph;
+		font-size: 12px;
+		color: #2e2e31;
+	}
+}
+.cat-posts {
+	&__heading-3 {
+		@extend .jumbotron__paragraph;
+		line-height: 1.36;
+		a{
+			color: #2e2e31;
+		}
+	}
+	&__paragraph {
+		@extend .cat-recent-post__paragraph;
+	}
+}
+.strike-left {
+	@extend .strike-right;
+	text-align: right;
+	margin-left: 15px;
+	margin-bottom: 43px;
+	&__see-all {
+		position: relative;
+        display: inline-block;
+        font-family: $font__avenir-heavy;
+        font-size: 16px;
+		text-transform: capitalize;
+		letter-spacing: 0.3px;
+		color: #ff564b;
+	
+		&:before {
+		    	display: inline-block;
+		    	content: "";
+		    	height: 2px;
+		    	background-color: #f6f6f6;
+		    	position: absolute;
+		    	width: 1000px;
+		    	right: 100%;
+		    	top: 50%;
+		    	margin-right: 15px;
+		    }
+		}
+}
+
