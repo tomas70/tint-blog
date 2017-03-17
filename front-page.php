@@ -22,7 +22,7 @@ get_header(); ?>
 			}
 			wp_reset_query();
 		?>
-			<p class="jumbotron__paragraph"><span><i class="fa fa-user-o" aria-hidden="true"></i> <?php the_author(); ?></span> <span><i class="fa fa-calendar" aria-hidden="true"></i> <?php the_time('jS F'); ?></span></p>
+			<p class="jumbotron__paragraph"><span><i class="fa fa-user-o" aria-hidden="true"></i> <?php the_author_posts_link(); ?></span> <span><i class="fa fa-calendar" aria-hidden="true"></i> <?php the_time('jS F'); ?></span></p>
 		</div>
 	</div>
 
@@ -38,7 +38,7 @@ get_header(); ?>
 					<div class="col-6 cat-recent-post">
 						<?php the_post_thumbnail( array(415, 277) ); ?>
 						<h2 class="cat-recent-post__heading-2"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-						<p class="cat-recent-post__paragraph"><span><i class="fa fa-user-o" aria-hidden="true"></i> <?php the_author(); ?></span> <span><i class="fa fa-calendar" aria-hidden="true"></i> <?php the_time('jS F'); ?></span></p>
+						<p class="cat-recent-post__paragraph"><span><i class="fa fa-user-o" aria-hidden="true"></i> <?php the_author_posts_link(); ?></span> <span><i class="fa fa-calendar" aria-hidden="true"></i> <?php the_time('jS F'); ?></span></p>
 					</div>
 				<?php endwhile; endif; ?>
 				<?php wp_reset_query(); ?>
@@ -51,7 +51,7 @@ get_header(); ?>
 							</div>
 							<div class="col-8 nopadding">
 								<h3 class="cat-posts__heading-3"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
-								<p class="cat-posts__paragraph"><span><i class="fa fa-user-o" aria-hidden="true"></i> <?php the_author(); ?></span> <span><i class="fa fa-calendar" aria-hidden="true"></i> <?php the_time('jS F'); ?></span></p>
+								<p class="cat-posts__paragraph"><span><i class="fa fa-user-o" aria-hidden="true"></i> <?php the_author_posts_link(); ?></span> <span><i class="fa fa-calendar" aria-hidden="true"></i> <?php the_time('jS F'); ?></span></p>
 							</div>
 						</div>
 					</div>
