@@ -967,6 +967,8 @@ object {
   color: #fff; }
   .jumbotron__paragraph span, .cat-recent-post__paragraph span, .cat-posts__paragraph span, .cat-posts__heading-3 span {
     margin-right: 9px; }
+  .jumbotron__paragraph a, .cat-recent-post__paragraph a, .cat-posts__paragraph a, .cat-posts__heading-3 a {
+    color: #fff; }
 
 .strike-right, .strike-left {
   display: block;
@@ -1005,6 +1007,8 @@ object {
 .cat-recent-post__paragraph, .cat-posts__paragraph {
   font-size: 12px;
   color: #2e2e31; }
+  .cat-recent-post__paragraph a, .cat-posts__paragraph a {
+    color: #2e2e31; }
 
 .cat-posts__heading-3 {
   line-height: 1.36; }
