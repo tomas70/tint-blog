@@ -1,6 +1,13 @@
 .site-header {
 	nav {
 		background-image: linear-gradient(93deg, #ff564b, #ff5648 49%, #fa6037);
+		.navbar-brand {
+			margin-left: 49px;
+			@media (max-width: 786px) {
+				padding-left: 9px;
+				padding-right: 9px;
+			}		
+		}
 		.navbar-collapse {
 			margin-left: 40px;
 			.navbar-nav {
