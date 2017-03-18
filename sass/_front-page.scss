@@ -43,6 +43,7 @@
 	display: block;
     overflow: hidden;
     white-space: nowrap;
+    margin-bottom: 20px;
 	&__heading-3 {
 		position: relative;
         display: inline-block;
@@ -72,6 +73,7 @@
 }
 .cat-recent-post {
 	&__heading-2 {
+		margin-top: 17px;
 		font-family: $font__avenir-heavy;
 		font-size: 18px;
 		line-height: 1.5;

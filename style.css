@@ -973,7 +973,8 @@ object {
 .strike-right, .strike-left {
   display: block;
   overflow: hidden;
-  white-space: nowrap; }
+  white-space: nowrap;
+  margin-bottom: 20px; }
   .strike-right__heading-3 {
     position: relative;
     display: inline-block; }
@@ -998,6 +999,7 @@ object {
       margin-left: -40px; }
 
 .cat-recent-post__heading-2 {
+  margin-top: 17px;
   font-family: "Avenir-Heavy";
   font-size: 18px;
   line-height: 1.5; }
@@ -1037,3 +1039,33 @@ object {
       right: 100%;
       top: 50%;
       margin-right: 15px; }
+
+/*--------------------------------------------------------------
+# Author Page
+--------------------------------------------------------------*/
+.author-header {
+  background-color: #fbfbfb;
+  padding: 42px 0;
+  margin-bottom: 36px; }
+  .author-header .avatar {
+    border-radius: 100px; }
+  .author-header__heading-2 {
+    font-family: "Avenir-Medium";
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 0;
+    color: #2e2e31; }
+  .author-header__description, .author-header__url {
+    font-family: "Avenir-Book";
+    font-size: 14px;
+    line-height: 1.57;
+    color: #3c3c40; }
+  .author-header__url {
+    font-family: "Avenir-Heavy"; }
+    .author-header__url:hover, .author-header__url:focus, .author-header__url:visited {
+      color: #3c3c40; }
+
+.cat-posts {
+  margin-bottom: 78px; }
+  .cat-posts img {
+    margin-bottom: 19px; }

@@ -33,6 +33,12 @@
 		"oAP": "\/archive.php",
 		"oF": 0
 		},
+	"\/author.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/author.php",
+		"oF": 0
+		},
 	"\/comments.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -302,6 +308,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/_normalize.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/author.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/author.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
