@@ -45,7 +45,7 @@ get_header(); ?>
 				<?php query_posts('cat=1&posts_per_page=3&offset=1'); ?>
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 					<div class="col-6 cat-posts">
-						<div class="row">
+						<div class="row align-items-center">
 							<div class="col">
 								<?php the_post_thumbnail(); ?>
 							</div>
