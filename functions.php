@@ -175,3 +175,17 @@ add_action('wp_enqueue_scripts','tint_blog_lightbox');
 // Register Custom Navigation Walker
 require_once('wp_bootstrap_navwalker.php');
 
+// Register Sidebars
+add_action( 'widgets_init', 'theme_slug_widgets_init' );
+function theme_slug_widgets_init() {
+    register_sidebar( array(
+        'name' => __( 'Home Page Sidebar', 'theme-slug' ),
+        'id' => 'home-sidebar',
+        'description' => __( 'Widgets in this area will be shown on home page.'),
+    ) );
+	register_sidebar( array(
+        'name' => __( 'Single Post Sidebar', 'theme-slug' ),
+        'id' => 'post-sidebar',
+        'description' => __( 'Widgets in this area will be shown on blog post pages.'),
+    ) );
+}

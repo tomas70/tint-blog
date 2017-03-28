@@ -18,3 +18,11 @@
 	clear: both;
 	width: $size__site-main;
 }
+
+.sidebar {
+	text-align: center;
+
+	li {
+		list-style: none;
+	}
+}

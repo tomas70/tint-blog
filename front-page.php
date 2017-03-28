@@ -28,8 +28,9 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-		<div class="container">
+		<div class="container-fluid">
 			<div class="row">
+
 				<?php query_posts('cat=1&posts_per_page=1&offset=1'); ?>
 					<div class="col-12 strike-right">
 						<h3 class="strike-right__heading-3"><?php the_category(); ?></h3>
@@ -52,6 +53,12 @@ get_header(); ?>
 						<div class="col-8 nopadding">
 							<h3 class="cat-posts__heading-3"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
 							<p class="cat-posts__paragraph"><span class="user-icon-black"> <?php the_author_posts_link(); ?></span> <span class="date-icon-black"> <?php the_time('jS F'); ?></span></p>
+
+						</div>
+						<div class="col-md-4 sidebar">
+							<?php if ( is_active_sidebar( 'home-sidebar' ) ) : ?>
+									<?php dynamic_sidebar( 'home-sidebar' ); ?>
+							<?php endif; ?>
 						</div>
 					</div>
 				<?php endwhile; endif; ?>
@@ -65,6 +72,7 @@ get_header(); ?>
 						<a class="strike-left__see-all" href="<?php echo esc_url( $category_link ); ?>" title="Category Name">See All Posts</a>
 					</div>
 				
+
 			</div>
 		</div>
 	</main><!-- #main -->
