@@ -29,7 +29,7 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/menu-items-copy-29.png" alt="<?php bloginfo( 'name' ); ?>">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/tint-logo-white.png" alt="<?php bloginfo( 'name' ); ?>" width="38" height="38" > <?php bloginfo( 'name' ); ?>
 			</a>
 			<div class="collapse navbar-collapse" id="navbarToggler">
 				<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu', 'menu_class' => 'navbar-nav mr-auto mt-2 mt-md-1' ) ); ?>
