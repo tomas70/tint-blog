@@ -3,6 +3,14 @@
 		background-image: linear-gradient(93deg, #ff564b, #ff5648 49%, #fa6037);
 		.navbar-brand {
 			margin-left: 49px;
+			font-family: $font__avenir-heavy;
+			font-size: 20px;
+			line-height: 0.6;
+			letter-spacing: 0.5px;
+			color: #fff;
+			&:hover {
+				color: #fff;
+			}
 			@media (max-width: 786px) {
 				padding-left: 9px;
 				padding-right: 9px;
