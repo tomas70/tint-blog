@@ -32,7 +32,7 @@ get_header(); ?>
 			<div class="row">
 				<div class="col">
 					<div class="row">
-						<div class="col-8">
+						<div class="col-md-8">
 							<div class="row">
 							<?php query_posts('cat=1&posts_per_page=1&offset=1'); ?>
 								<div class="col-12 strike-right">

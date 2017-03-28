@@ -34,7 +34,7 @@ get_header(); ?>
 		<div class="container">
 			<div class="row">
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-					<div class="col-4 cat-posts">
+					<div class="col-md-4 cat-posts">
 						<div class="row">
 							<div class="col">
 								<?php the_post_thumbnail(); ?>

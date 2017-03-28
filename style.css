@@ -495,17 +495,17 @@ textarea {
 --------------------------------------------------------------*/
 .content-area {
   float: left;
-  margin: 0 0% 0 0;
+  margin: 0 -25% 0 0;
   width: 100%;
   padding: 0 45px; }
 
 .site-main {
-  margin: 0 0% 0 0; }
+  margin: 0 25% 0 0; }
 
 .site-content .widget-area {
   float: right;
   overflow: hidden;
-  width: 0%;
+  width: 25%;
   padding: 0 20px; }
 
 .site-footer {
@@ -1094,3 +1094,31 @@ object {
   margin-bottom: 48px; }
   .author .cat-posts img {
     margin-bottom: 19px; }
+
+/*--------------------------------------------------------------
+# Single Page
+--------------------------------------------------------------*/
+.single .jumbotron {
+  margin-bottom: 0; }
+
+.single .single-post-header {
+  background-color: #f6f6f6;
+  padding: 19px 45px; }
+  .single .single-post-header p {
+    margin-bottom: 0;
+    font-family: "Avenir-Heavy";
+    font-size: 19px;
+    line-height: 1.42; }
+  .single .single-post-header .btn-download-ebook {
+    font-family: "Avenir-Black";
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    padding: 10px 65px 9px;
+    background-color: #ff564b;
+    border-radius: 100px;
+    color: #fff; }
+
+.single .entry-title {
+  font-family: "Avenir-Black";
+  font-size: 23px;
+  line-height: 1.74; }
