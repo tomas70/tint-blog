@@ -51,18 +51,6 @@
 		"oAP": "\/footer.php",
 		"oF": 0
 		},
-	"\/front-page.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/front-page.php",
-		"oF": 0
-		},
-	"\/functions.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/functions.php",
-		"oF": 0
-		},
 	"\/header.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -523,32 +511,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/sass\/layout\/_content-sidebar.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/sass\/layout\/_content-sidebar.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/sass\/layout\/_sidebar-content.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/sass\/layout\/_sidebar-content.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/sass\/media\/_captions.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -894,19 +856,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/sass\/variables-site\/_structure.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/sass\/variables-site\/_structure.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/sass\/variables-site\/_typography.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -960,16 +909,6 @@
 		"oA": 2,
 		"oAP": "\/single.php",
 		"oF": 0
-		},
-	"\/style.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/style-min.css",
-		"oF": 0,
-		"oS": 0
 		},
 	"\/template-parts\/content-none.php": {
 		"ft": 8192,
