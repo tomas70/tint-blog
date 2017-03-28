@@ -22,7 +22,7 @@ get_header(); ?>
 			}
 			wp_reset_query();
 		?>
-			<p class="jumbotron__paragraph"><span><i class="fa fa-user-o" aria-hidden="true"></i> <?php the_author_posts_link(); ?></span> <span><i class="fa fa-calendar" aria-hidden="true"></i> <?php the_time('jS F'); ?></span></p>
+			<p class="jumbotron__paragraph"><span class="user-icon-white"> <?php the_author_posts_link(); ?></span> <span class="date-icon-white"> <?php the_time('jS F'); ?></span></p>
 		</div>
 	</div>
 
@@ -30,7 +30,7 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 		<div class="container">
 			<div class="row">
-				<?php query_posts('cat=1&posts_per_page=1'); ?>
+				<?php query_posts('cat=1&posts_per_page=1&offset=1'); ?>
 					<div class="col-12 strike-right">
 						<h3 class="strike-right__heading-3"><?php the_category(); ?></h3>
 					</div>
@@ -38,23 +38,25 @@ get_header(); ?>
 					<div class="col-6 cat-recent-post">
 						<?php the_post_thumbnail(); ?>
 						<h2 class="cat-recent-post__heading-2"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-						<p class="cat-recent-post__paragraph"><span><i class="fa fa-user-o" aria-hidden="true"></i> <?php the_author_posts_link(); ?></span> <span><i class="fa fa-calendar" aria-hidden="true"></i> <?php the_time('jS F'); ?></span></p>
+						<p class="cat-recent-post__paragraph"><span class="user-icon-black"> <?php the_author_posts_link(); ?></span> <span class="date-icon-black"> <?php the_time('jS F'); ?></span></p>
 					</div>
 				<?php endwhile; endif; ?>
 				<?php wp_reset_query(); ?>
-				<?php query_posts('cat=1&posts_per_page=3&offset=1'); ?>
+				<div class="col-6 cat-posts">
+				<?php query_posts('cat=1&posts_per_page=3&offset=2'); ?>
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-					<div class="col-6 cat-posts">
-						<div class="row align-items-center">
-							<div class="col">
-								<?php the_post_thumbnail(); ?>
-							</div>
-							<div class="col nopadding">
-								<h3 class="cat-posts__heading-3"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
-								<p class="cat-posts__paragraph"><span><i class="fa fa-user-o" aria-hidden="true"></i> <?php the_author_posts_link(); ?></span> <span><i class="fa fa-calendar" aria-hidden="true"></i> <?php the_time('jS F'); ?></span></p>
-							</div>
+					<div class="row align-items-center">
+						<div class="col-4">
+							<?php the_post_thumbnail(); ?>
+						</div>
+						<div class="col-8 nopadding">
+							<h3 class="cat-posts__heading-3"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
+							<p class="cat-posts__paragraph"><span class="user-icon-black"> <?php the_author_posts_link(); ?></span> <span class="date-icon-black"> <?php the_time('jS F'); ?></span></p>
 						</div>
 					</div>
+				<?php endwhile; endif; ?>
+				<?php wp_reset_query(); ?>
+				</div>
 					<div class="col-12 strike-left">
 						<?php
 						    $category_id = 1;
@@ -62,8 +64,7 @@ get_header(); ?>
 						?>
 						<a class="strike-left__see-all" href="<?php echo esc_url( $category_link ); ?>" title="Category Name">See All Posts</a>
 					</div>
-				<?php endwhile; endif; ?>
-				<?php wp_reset_query(); ?>
+				
 			</div>
 		</div>
 	</main><!-- #main -->
