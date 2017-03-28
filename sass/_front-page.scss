@@ -91,6 +91,9 @@
 	}
 }
 .cat-posts {
+	.row {
+		margin-bottom: 33px;
+	}
 	&__heading-3 {
 		@extend .jumbotron__paragraph;
 		line-height: 1.36;
@@ -129,4 +132,23 @@
 		    }
 		}
 }
-
+.user-icon-white {
+	background-image: url(img/user-icon-white.png);
+	background-size: 14px 14px;
+	background-repeat: no-repeat;
+	background-position: 0px center;
+	padding: 0 0 0 17px;
+}
+.user-icon-black {
+	background-image: url(img/user-icon-black.png);
+	background-size: 12px 12px;
+	@extend .user-icon-white;
+}
+.date-icon-white {
+	background-image: url(img/date-icon-white.png);
+	@extend .user-icon-white;
+}
+.date-icon-black {
+	background-image: url(img/date-icon-black.png);
+	@extend .user-icon-black;
+}

@@ -834,7 +834,7 @@ object {
 
 .site-header .form-inline .form-control {
   background-color: transparent;
-  background-image: url(img/loupe.png);
+  background-image: url(img/search-icon.png);
   background-position: 0px center;
   background-repeat: no-repeat;
   background-size: 22px 22px;
@@ -1017,6 +1017,9 @@ object {
   .cat-recent-post__paragraph a, .cat-posts__paragraph a {
     color: #2e2e31; }
 
+.cat-posts .row {
+  margin-bottom: 33px; }
+
 .cat-posts__heading-3 {
   line-height: 1.36; }
   .cat-posts__heading-3 a {
@@ -1045,32 +1048,49 @@ object {
       top: 50%;
       margin-right: 15px; }
 
+.user-icon-white, .user-icon-black, .date-icon-black, .date-icon-white {
+  background-image: url(img/user-icon-white.png);
+  background-size: 14px 14px;
+  background-repeat: no-repeat;
+  background-position: 0px center;
+  padding: 0 0 0 17px; }
+
+.user-icon-black, .date-icon-black {
+  background-image: url(img/user-icon-black.png);
+  background-size: 12px 12px; }
+
+.date-icon-white {
+  background-image: url(img/date-icon-white.png); }
+
+.date-icon-black {
+  background-image: url(img/date-icon-black.png); }
+
 /*--------------------------------------------------------------
 # Author Page
 --------------------------------------------------------------*/
-.author-header {
+.author .author-header {
   background-color: #fbfbfb;
   padding: 42px 0;
   margin-bottom: 36px; }
-  .author-header .avatar {
+  .author .author-header .avatar {
     border-radius: 100px; }
-  .author-header__heading-2 {
+  .author .author-header__heading-2 {
     font-family: "Avenir-Medium";
     font-size: 24px;
     line-height: 1.5;
     margin-bottom: 0;
     color: #2e2e31; }
-  .author-header__description, .author-header__url {
+  .author .author-header__description, .author .author-header__url {
     font-family: "Avenir-Book";
     font-size: 14px;
     line-height: 1.57;
     color: #3c3c40; }
-  .author-header__url {
+  .author .author-header__url {
     font-family: "Avenir-Heavy"; }
-    .author-header__url:hover, .author-header__url:focus, .author-header__url:visited {
+    .author .author-header__url:hover, .author .author-header__url:focus, .author .author-header__url:visited {
       color: #3c3c40; }
 
-.cat-posts {
-  margin-bottom: 78px; }
-  .cat-posts img {
+.author .cat-posts {
+  margin-bottom: 48px; }
+  .author .cat-posts img {
     margin-bottom: 19px; }
