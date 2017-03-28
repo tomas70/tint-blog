@@ -83,5 +83,4 @@ get_header(); ?>
 	</main><!-- #main -->
 </div><!-- #primary -->
 <?php
-get_sidebar();
 get_footer();
