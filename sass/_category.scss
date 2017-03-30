@@ -1,0 +1,20 @@
+.category {
+	.category-header {
+		background-color: #fbfbfb;
+		padding: 42px 0;
+		margin-bottom: 36px;
+		&__text {
+			text-align: center;
+			font-family: $font__avenir-medium;
+			font-size: 24px;
+			line-height: 1.5;
+			color: #bababa;
+		}
+	}
+	.cat-posts {
+		margin-bottom: 48px;
+		img {
+			margin-bottom: 19px;
+		}
+	}
+}

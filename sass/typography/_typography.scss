@@ -9,6 +9,17 @@ textarea {
 	@include font-size(1);
 	line-height: $font__line-height-body;
 }
+strong {
+	font-family: $font__avenir-heavy;
+	color: #fc3d3b;
+}
+.entry-content {
+	p{
+		font-size: 21px;
+		line-height: 1.57;
+		letter-spacing: normal;
+	}
+}
 
 @import "headings";
 

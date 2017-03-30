@@ -304,8 +304,22 @@ textarea {
   font-size: 1rem;
   line-height: 1.57; }
 
+strong {
+  font-family: "Avenir-Heavy";
+  color: #fc3d3b; }
+
+.entry-content p {
+  font-size: 21px;
+  line-height: 1.57;
+  letter-spacing: normal; }
+
 h1, h2, h3, h4, h5, h6 {
   clear: both; }
+
+h1 {
+  font-family: "Avenir-Black";
+  font-size: 23px;
+  line-height: 1.74; }
 
 p {
   margin-bottom: 1.5em; }
@@ -733,6 +747,9 @@ a {
   padding-left: 0px;
   padding-right: 0px; }
 
+.site-content {
+  margin-top: 62px; }
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
@@ -1103,6 +1120,25 @@ object {
     margin-bottom: 19px; }
 
 /*--------------------------------------------------------------
+# Category Page
+--------------------------------------------------------------*/
+.category .category-header {
+  background-color: #fbfbfb;
+  padding: 42px 0;
+  margin-bottom: 36px; }
+  .category .category-header__text {
+    text-align: center;
+    font-family: "Avenir-Medium";
+    font-size: 24px;
+    line-height: 1.5;
+    color: #bababa; }
+
+.category .cat-posts {
+  margin-bottom: 48px; }
+  .category .cat-posts img {
+    margin-bottom: 19px; }
+
+/*--------------------------------------------------------------
 # Single Page
 --------------------------------------------------------------*/
 .single .jumbotron {
@@ -1110,7 +1146,8 @@ object {
 
 .single .single-post-header {
   background-color: #f6f6f6;
-  padding: 19px 45px; }
+  padding: 19px 45px;
+  margin-bottom: 59px; }
   .single .single-post-header p {
     margin-bottom: 0;
     font-family: "Avenir-Heavy";
