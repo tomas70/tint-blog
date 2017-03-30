@@ -39,6 +39,12 @@
 		"oAP": "\/author.php",
 		"oF": 0
 		},
+	"\/category.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/category.php",
+		"oF": 0
+		},
 	"\/comments.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -389,6 +395,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/_author.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/_category.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/_category.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
