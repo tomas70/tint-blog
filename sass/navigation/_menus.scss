@@ -105,3 +105,34 @@
 		width: 50%;
 	}
 }
+
+.menu {
+	&--secondary {
+		height: 60px;
+		ul {
+			padding: 0;
+			margin-left: 20px;
+			li {
+				float: left;
+				padding: 15px 20px 15px 0;
+
+				a {
+					font-family: $font__avenir-heavy;
+					font-size: 14px;
+					letter-spacing: 0.2px;
+					color: #bababa;
+
+					&:hover {
+						text-decoration: none;
+						color: #181818;
+					}
+				}
+			}
+		}
+	}
+	&--tertiary {
+		ul {
+			float: right;
+		}
+	}
+}

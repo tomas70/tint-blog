@@ -616,6 +616,26 @@ a {
   text-align: right;
   width: 50%; }
 
+.menu--secondary {
+  height: 60px; }
+  .menu--secondary ul {
+    padding: 0;
+    margin-left: 20px; }
+    .menu--secondary ul li {
+      float: left;
+      padding: 15px 20px 15px 0; }
+      .menu--secondary ul li a {
+        font-family: "Avenir-Heavy";
+        font-size: 14px;
+        letter-spacing: 0.2px;
+        color: #bababa; }
+        .menu--secondary ul li a:hover {
+          text-decoration: none;
+          color: #181818; }
+
+.menu--tertiary ul {
+  float: right; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -743,12 +763,15 @@ a {
 .bypostauthor {
   display: block; }
 
+body {
+  overflow-x: hidden; }
+
 .nopadding {
   padding-left: 0 !important;
   padding-right: 0 !important; }
 
 .site-content {
-  margin-top: 30px; }
+  margin-top: 62px; }
 
 @media (min-width: 1200px) {
   .container-fluid {
@@ -843,7 +866,8 @@ object {
 --------------------------------------------------------------*/
 .site-header nav {
   background-image: -webkit-linear-gradient(357deg, #ff564b, #ff5648 49%, #fa6037);
-  background-image: linear-gradient(93deg, #ff564b, #ff5648 49%, #fa6037); }
+  background-image: linear-gradient(93deg, #ff564b, #ff5648 49%, #fa6037);
+  padding: 7px 70px 6px 20px; }
   .site-header nav .navbar-brand {
     margin-left: 49px;
     font-family: "Avenir-Heavy";
@@ -994,10 +1018,10 @@ object {
   background-color: #282828;
   opacity: 0.5;
   position: absolute;
-  top: 0;
+  top: 122px;
   z-index: 0;
   width: 100%;
-  height: 583px; }
+  height: 521px; }
 
 .jumbotron {
   padding: 0; }

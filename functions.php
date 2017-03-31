@@ -45,6 +45,8 @@ function tint_blog_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'menu-1' => esc_html__( 'Primary', 'tint-blog' ),
+		'menu-2' => esc_html__( 'Secondary', 'tint-blog' ),
+		'menu-3' => esc_html__( 'Tertiary', 'tint-blog' ),
 	) );
 
 	/*

@@ -9,7 +9,16 @@
 
 get_header(); ?>
 
-
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-8 menu--secondary">
+				<?php wp_nav_menu( array( 'theme_location' => 'menu-2', 'menu_id' => 'secondary-menu', 'menu_class' => 'mt-2 mt-md-1' ) ); ?>
+			</div>
+			<div class="col-md-4 menu--secondary menu--tertiary">
+				<?php wp_nav_menu( array( 'theme_location' => 'menu-3', 'menu_id' => 'tertiary-menu', 'menu_class' => 'mt-2 mt-md-1' ) ); ?>
+			</div>
+		</div>
+	</div>
 	<?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 	<div class="jumbotron jumbotron-fluid" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat; background-size: cover; height: 521px">
 		<div class="container-fluid valign">
