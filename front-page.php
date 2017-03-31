@@ -32,28 +32,28 @@ get_header(); ?>
 			<div class="row">
 				<div class="col-12">
 					<div class="row">
-						<div class="col-md-9">
+						<div class="col-md-8">
 							<div class="row">
-							<?php $i = 0; query_posts('cat=1&posts_per_page=4'); ?>
+							<?php $i = 0; query_posts('cat=1&posts_per_page=4&offset=1'); ?>
 									<div class="col-12 strike-right">
 										<h3 class="strike-right__heading-3"><?php the_category(); ?></h3>
 									</div>
-								<div class="col-md-6">
+								<div class="col-md-7">
 								<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $i++ ?>
 									<?php if ($i == 1) { ?>
 									<div class="col-md-12 cat-recent-post">
-										<?php the_post_thumbnail(); ?>
+										<?php the_post_thumbnail('most-recent'); ?>
 										<h2 class="cat-recent-post__heading-2"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 										<p class="cat-recent-post__paragraph"><span><i class="fa fa-user-o" aria-hidden="true"></i> <?php the_author_posts_link(); ?></span> <span><i class="fa fa-calendar" aria-hidden="true"></i> <?php the_time('jS F'); ?></span></p>
 									</div>
 								</div>
-								<div class="col-md-6">
+								<div class="col-md-5">
 									<div class="row">
 										<?php } else { ?>
 										<div class="col-md-12 cat-posts">
 											<div class="row align-items-center">
-												<div class="col">
-													<?php the_post_thumbnail(); ?>
+												<div class="col-md-5">
+													<?php the_post_thumbnail('recent-posts'); ?>
 												</div>
 												<div class="col nopadding">
 													<h3 class="cat-posts__heading-3"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
@@ -74,26 +74,26 @@ get_header(); ?>
 							</div>
 							</div>
 							<div class="row">
-							<?php $i = 0; query_posts('cat=1&posts_per_page=4'); ?>
+							<?php $i = 0; query_posts('cat=1&posts_per_page=4&offset=1'); ?>
 									<div class="col-12 strike-right">
 										<h3 class="strike-right__heading-3"><?php the_category(); ?></h3>
 									</div>
-								<div class="col-md-6">
+								<div class="col-md-7">
 								<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $i++ ?>
 									<?php if ($i == 1) { ?>
 									<div class="col-md-12 cat-recent-post">
-										<?php the_post_thumbnail(); ?>
+										<?php the_post_thumbnail('most-recent'); ?>
 										<h2 class="cat-recent-post__heading-2"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 										<p class="cat-recent-post__paragraph"><span><i class="fa fa-user-o" aria-hidden="true"></i> <?php the_author_posts_link(); ?></span> <span><i class="fa fa-calendar" aria-hidden="true"></i> <?php the_time('jS F'); ?></span></p>
 									</div>
 								</div>
-								<div class="col-md-6">
+								<div class="col-md-5">
 									<div class="row">
 										<?php } else { ?>
 										<div class="col-md-12 cat-posts">
 											<div class="row align-items-center">
-												<div class="col">
-													<?php the_post_thumbnail(); ?>
+												<div class="col-md-5">
+													<?php the_post_thumbnail('recent-posts'); ?>
 												</div>
 												<div class="col nopadding">
 													<h3 class="cat-posts__heading-3"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
@@ -114,26 +114,26 @@ get_header(); ?>
 							</div>
 							</div>
 							<div class="row">
-							<?php $i = 0; query_posts('cat=1&posts_per_page=4'); ?>
+							<?php $i = 0; query_posts('cat=1&posts_per_page=4&offset=1'); ?>
 									<div class="col-12 strike-right">
 										<h3 class="strike-right__heading-3"><?php the_category(); ?></h3>
 									</div>
-								<div class="col-md-6">
+								<div class="col-md-7">
 								<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $i++ ?>
 									<?php if ($i == 1) { ?>
 									<div class="col-md-12 cat-recent-post">
-										<?php the_post_thumbnail(); ?>
+										<?php the_post_thumbnail('most-recent'); ?>
 										<h2 class="cat-recent-post__heading-2"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 										<p class="cat-recent-post__paragraph"><span><i class="fa fa-user-o" aria-hidden="true"></i> <?php the_author_posts_link(); ?></span> <span><i class="fa fa-calendar" aria-hidden="true"></i> <?php the_time('jS F'); ?></span></p>
 									</div>
 								</div>
-								<div class="col-md-6">
+								<div class="col-md-5">
 									<div class="row">
 										<?php } else { ?>
 										<div class="col-md-12 cat-posts">
 											<div class="row align-items-center">
-												<div class="col">
-													<?php the_post_thumbnail(); ?>
+												<div class="col-md-5">
+													<?php the_post_thumbnail('recent-posts'); ?>
 												</div>
 												<div class="col nopadding">
 													<h3 class="cat-posts__heading-3"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
@@ -154,7 +154,7 @@ get_header(); ?>
 							</div>
 							</div>
 						</div>
-						<div class="col-md-3 sidebar">
+						<div class="col-md-4 sidebar">
 			 				<?php if ( is_active_sidebar( 'home-sidebar' ) ) : ?>
 			 						<?php dynamic_sidebar( 'home-sidebar' ); ?>
 			 				<?php endif; ?>
