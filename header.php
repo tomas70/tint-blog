@@ -33,13 +33,18 @@
 			</a>
 			<div class="collapse navbar-collapse" id="navbarToggler">
 				<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu', 'menu_class' => 'navbar-nav mr-auto mt-2 mt-md-1' ) ); ?>
-				<form class="form-inline ml-auto my-2 my-lg-0">
-					<button class="btn btn-sm align-middle btn-outline-secondary my-2 my-sm-0" type="button">Learn More About TINT</button>
+				
+				<form class="form-inline ml-auto my-2 my-lg-0" role="search" action="<?php echo site_url('/'); ?>" method="get" >
+					<input type="text" class="form-control ml-sm-3" placeholder="Learn More About TINT" name="s" id="search" value="<?php the_search_query(); ?>">
+					<input type="submit" class="search-submit ml-sm-3" value="">
 				</form>
-				<form class="form-inline my-2 my-lg-0" role="search" action="<?php echo site_url('/'); ?>" method="get" >
-					<input type="text" class="form-control ml-sm-3" placeholder="Search" name="s" id="search" value="<?php the_search_query(); ?>">
-            		<input type="submit" class="search-submit ml-sm-3" value="Search">
-				</form>
+				<script type="text/javascript">
+					$('input[name=s]').on("click focus",function(){
+					    $(this).attr("placeholder","I want to learn about...");
+					}).on("blur",function(){
+					    $(this).attr("placeholder","Learn More About TINT");
+					});
+				</script>
 			</div>
 		</nav>
 	</header><!-- #masthead -->
