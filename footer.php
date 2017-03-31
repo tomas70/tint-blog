@@ -14,7 +14,7 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="container-fluid">
+		<div class="container-fluid nopadding">
             <div class="row footer-nav">
                 
                     <div class="col-md-2 offset-md-1">

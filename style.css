@@ -509,17 +509,17 @@ textarea {
 --------------------------------------------------------------*/
 .content-area {
   float: left;
-  margin: 0 -25% 0 0;
+  margin: 0 0% 0 0;
   width: 100%;
-  padding: 0 45px; }
+  padding: 0 0; }
 
 .site-main {
-  margin: 0 25% 0 0; }
+  margin: 0 0% 0 0; }
 
 .site-content .widget-area {
   float: right;
   overflow: hidden;
-  width: 25%;
+  width: 0%;
   padding: 0 20px; }
 
 .site-footer {
@@ -744,11 +744,22 @@ a {
   display: block; }
 
 .nopadding {
-  padding-left: 0px;
-  padding-right: 0px; }
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
 
 .site-content {
-  margin-top: 62px; }
+  margin-top: 30px; }
+
+@media (min-width: 1200px) {
+  .container-fluid {
+    padding-right: 65px;
+    padding-left: 65px; } }
+
+.valign {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
 
 /*--------------------------------------------------------------
 # Infinite scroll
@@ -978,42 +989,51 @@ object {
 /*--------------------------------------------------------------
 # Front Page
 --------------------------------------------------------------*/
-.jumbotron-fluid {
-  padding-left: 49px;
-  padding-right: 49px; }
-  @media (max-width: 786px) {
-    .jumbotron-fluid {
-      padding-left: 9px;
-      padding-right: 9px; } }
+.jumbotron-fluid:before {
+  content: "" !important;
+  background-color: #282828;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+  height: 583px; }
 
-.jumbotron__heading-1 {
-  font-family: "Avenir-Black";
-  font-size: 40px;
-  line-height: normal;
-  max-width: 741px; }
-  .jumbotron__heading-1 a {
+.jumbotron {
+  padding: 0; }
+  .jumbotron__heading-1 {
+    font-family: "Avenir-Black";
+    font-size: 40px;
+    font-size: 3vw;
+    line-height: normal;
+    max-width: 741px; }
+    @media (max-width: 666.666666667px) {
+      .jumbotron__heading-1 {
+        font-size: 20px; } }
+    @media (min-width: 1333.33333333px) {
+      .jumbotron__heading-1 {
+        font-size: 40px; } }
+    .jumbotron__heading-1 a {
+      color: #fff; }
+  .jumbotron__heading-3 {
+    font-family: "Avenir-Heavy";
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    color: #fff;
+    text-align: center;
+    width: 119px;
+    padding: 9px 0;
+    background-image: -webkit-linear-gradient(345deg, #ff564b, #ff5648 49%, #fa6037);
+    background-image: linear-gradient(105deg, #ff564b, #ff5648 49%, #fa6037); }
+  .jumbotron__paragraph, .cat-recent-post__paragraph, .cat-posts__paragraph, .cat-posts__heading-3 {
+    font-family: "Avenir-Heavy";
+    font-size: 14px;
+    letter-spacing: 0.2px;
     color: #fff; }
-
-.jumbotron__heading-3 {
-  font-family: "Avenir-Heavy";
-  font-size: 14px;
-  letter-spacing: 0.2px;
-  color: #fff;
-  text-align: center;
-  width: 119px;
-  padding: 9px 0;
-  background-image: -webkit-linear-gradient(345deg, #ff564b, #ff5648 49%, #fa6037);
-  background-image: linear-gradient(105deg, #ff564b, #ff5648 49%, #fa6037); }
-
-.jumbotron__paragraph, .cat-recent-post__paragraph, .cat-posts__paragraph, .cat-posts__heading-3 {
-  font-family: "Avenir-Heavy";
-  font-size: 14px;
-  letter-spacing: 0.2px;
-  color: #fff; }
-  .jumbotron__paragraph span, .cat-recent-post__paragraph span, .cat-posts__paragraph span, .cat-posts__heading-3 span {
-    margin-right: 9px; }
-  .jumbotron__paragraph a, .cat-recent-post__paragraph a, .cat-posts__paragraph a, .cat-posts__heading-3 a {
-    color: #fff; }
+    .jumbotron__paragraph span, .cat-recent-post__paragraph span, .cat-posts__paragraph span, .cat-posts__heading-3 span {
+      margin-right: 9px; }
+    .jumbotron__paragraph a, .cat-recent-post__paragraph a, .cat-posts__paragraph a, .cat-posts__heading-3 a {
+      color: #fff; }
 
 .strike-right, .strike-left {
   display: block;
