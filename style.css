@@ -857,6 +857,28 @@ object {
       padding: 10px 25px; }
 
 .site-header .form-inline .form-control {
+  padding: 5px 20px 3px;
+  background-color: transparent;
+  border-radius: 100px;
+  border: 1px solid #fff;
+  -webkit-transition: width 400ms ease, background 400ms ease;
+  transition: width 400ms ease, background 400ms ease;
+  width: 210px; }
+  .site-header .form-inline .form-control:focus {
+    box-shadow: none;
+    cursor: text;
+    outline: 0;
+    width: 300px; }
+  .site-header .form-inline .form-control::-webkit-input-placeholder {
+    color: #fff; }
+  .site-header .form-inline .form-control:-moz-placeholder {
+    color: #fff; }
+  .site-header .form-inline .form-control::-moz-placeholder {
+    color: #fff; }
+  .site-header .form-inline .form-control:-ms-input-placeholder {
+    color: #fff; }
+
+.site-header .form-inline .search-submit {
   background-color: transparent;
   background-image: url(img/search-icon.png);
   background-position: 0px center;
@@ -870,20 +892,6 @@ object {
   margin: 0;
   padding: 0 0 0 34px;
   position: relative;
-  -webkit-transition: width 400ms ease, background 400ms ease;
-  transition: width 400ms ease, background 400ms ease;
-  width: 0; }
-  .site-header .form-inline .form-control:focus {
-    background-color: transparent;
-    border-bottom: 1px solid #fff;
-    box-shadow: none;
-    border-radius: 0;
-    cursor: text;
-    outline: 0;
-    width: 300px; }
-
-.site-header .form-inline .search-submit {
-  display: none;
   border-radius: 0;
   border: 0;
   border-color: transparent; }
@@ -929,6 +937,14 @@ object {
     .site-footer .footer form {
       color: #fff;
       opacity: 0.5; }
+    .site-footer .footer .form-control::-webkit-input-placeholder {
+      color: #fff; }
+    .site-footer .footer .form-control:-moz-placeholder {
+      color: #fff; }
+    .site-footer .footer .form-control::-moz-placeholder {
+      color: #fff; }
+    .site-footer .footer .form-control:-ms-input-placeholder {
+      color: #fff; }
     .site-footer .footer input[type="email"], .site-footer .footer input[type="text"] {
       height: 34px;
       border: 0;
