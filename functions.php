@@ -45,6 +45,8 @@ function tint_blog_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'menu-1' => esc_html__( 'Primary', 'tint-blog' ),
+		'menu-2' => esc_html__( 'Secondary', 'tint-blog' ),
+		'menu-3' => esc_html__( 'Tertiary', 'tint-blog' ),
 	) );
 
 	/*
@@ -88,18 +90,19 @@ add_action( 'after_setup_theme', 'tint_blog_content_width', 0 );
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function tint_blog_widgets_init() {
-	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'tint-blog' ),
-		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'tint-blog' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
-}
 add_action( 'widgets_init', 'tint_blog_widgets_init' );
+function tint_blog_widgets_init() {
+    register_sidebar( array(
+        'name' => __( 'Home Page Sidebar', 'tint-blog' ),
+        'id' => 'home-sidebar',
+        'description' => __( 'Widgets in this area will be shown on home page.'),
+    ) );
+	register_sidebar( array(
+        'name' => __( 'Single Post Sidebar', 'tint-blog' ),
+        'id' => 'post-sidebar',
+        'description' => __( 'Widgets in this area will be shown on blog post pages.'),
+    ) );
+}
 
 /**
  * Enqueue scripts and styles.
@@ -175,17 +178,15 @@ add_action('wp_enqueue_scripts','tint_blog_lightbox');
 // Register Custom Navigation Walker
 require_once('wp_bootstrap_navwalker.php');
 
-// Register Sidebars
-add_action( 'widgets_init', 'theme_slug_widgets_init' );
-function theme_slug_widgets_init() {
-    register_sidebar( array(
-        'name' => __( 'Home Page Sidebar', 'theme-slug' ),
-        'id' => 'home-sidebar',
-        'description' => __( 'Widgets in this area will be shown on home page.'),
-    ) );
-	register_sidebar( array(
-        'name' => __( 'Single Post Sidebar', 'theme-slug' ),
-        'id' => 'post-sidebar',
-        'description' => __( 'Widgets in this area will be shown on blog post pages.'),
+// Add custom thumbnail sizes
+add_image_size( 'most-recent', 420, 270, true );
+add_image_size( 'recent-posts', 120, 100, true );
+
+add_filter( 'image_size_names', 'custom_sizes' );
+ 
+function custom_sizes( $sizes ) {
+    return array_merge( $sizes, array(
+        'most-recent' => __( 'Most Recent' ),
+        'recent-posts' => __( 'Recent Posts' ),
     ) );
 }

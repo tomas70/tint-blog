@@ -1,15 +1,22 @@
 .jumbotron-fluid {
-	padding-left: 49px;
-	padding-right: 49px;
-	@media (max-width: 786px) {
-		padding-left: 9px;
-		padding-right: 9px;
+
+	&:before {
+		content: "" !important;
+	    background-color: #282828;
+	    opacity: 0.5;
+	    position: absolute;
+	    top: 122px;
+	    z-index: 0;
+	    width: 100%;
+	    height: 521px;
 	}
 }
 .jumbotron {
+	padding: 0;
+
 	&__heading-1 {
 		font-family: $font__avenir-black;
-		font-size: 40px;
+		@include responsive-font(3vw, 20px, 40px, 40px);
 		line-height: normal;
 		max-width: 741px;
 		a {

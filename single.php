@@ -16,8 +16,8 @@ get_header(); ?>
 		$backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($recent["ID"]), 'full' );
 		}
 	?>
-	<div class="jumbotron jumbotron-fluid" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat; background-size: 100% auto;">
-		<div class="container-fluid">
+	<div class="jumbotron jumbotron-fluid" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat; background-size: cover; height: 521px">
+		<div class="container-fluid valign">
 		<h3 class="jumbotron__heading-3">Most Recent</h3>
 		<?php
 			$args = array('numberposts' => '1', );
@@ -30,7 +30,7 @@ get_header(); ?>
 			<p class="jumbotron__paragraph"><span class="user-icon-white"> <?php the_author_posts_link(); ?></span> <span class="date-icon-white"> <?php the_time('jS F'); ?></span></p>
 		</div>
 	</div>
-	<div class="container-fluid">
+	<div class="container-fluid nopadding">
 		<div class="row align-items-center single-post-header">
 			<div class="col-md-9">
 				<p>Need help creating content quickly? Download our latest marketing guide!</p>
