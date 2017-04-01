@@ -1182,20 +1182,20 @@ object {
 /*--------------------------------------------------------------
 # Category Page
 --------------------------------------------------------------*/
-.category .category-header {
+.category .category-header, .search .category-header {
   background-color: #fbfbfb;
   padding: 42px 0;
   margin-bottom: 36px; }
-  .category .category-header__text {
+  .category .category-header__text, .search .category-header__text {
     text-align: center;
     font-family: "Avenir-Medium";
     font-size: 24px;
     line-height: 1.5;
     color: #bababa; }
 
-.category .cat-posts {
+.category .cat-posts, .search .cat-posts {
   margin-bottom: 48px; }
-  .category .cat-posts img {
+  .category .cat-posts img, .search .cat-posts img {
     margin-bottom: 19px; }
 
 /*--------------------------------------------------------------
