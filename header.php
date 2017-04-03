@@ -37,13 +37,18 @@
 					
 					<form class="form-inline ml-auto my-2 my-lg-0" role="search" action="<?php echo site_url('/'); ?>" method="get" >
 						<input type="text" class="form-control ml-sm-3" placeholder="Learn More About TINT" name="s" id="search" value="<?php the_search_query(); ?>">
-						<input type="submit" class="search-submit ml-sm-3" value="">
+						<img class="search-icon ml-sm-3" src="<?php echo get_template_directory_uri(); ?>/img/search-icon.png" width="16" height="16" >
+						<button type="reset" class="reset"><i class="fa fa-times" aria-hidden="true"></i></button>
 					</form>
 					<script type="text/javascript">
 						$('input[name=s]').on("click focus",function(){
 						    $(this).attr("placeholder","I want to learn about...");
+						    $(".search-icon").hide();
+						    $(".reset").show();
 						}).on("blur",function(){
 						    $(this).attr("placeholder","Learn More About TINT");
+						    $(".search-icon").show();
+						    $(".reset").hide();
 						});
 					</script>
 				</div>
