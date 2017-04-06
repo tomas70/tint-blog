@@ -133,6 +133,14 @@
 	&--tertiary {
 		ul {
 			float: right;
+			@media (max-width: 786px) {
+				float: none;
+				margin: 0 auto;
+				li {
+					float: none;
+					text-align: center;
+				}
+			}
 		}
 	}
 }
