@@ -26,11 +26,14 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="container-fluid">
 			<nav class="navbar navbar-toggleable-md navbar-light fixed-top">
-				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/tint-logo-white.png" alt="<?php bloginfo( 'name' ); ?>" width="38" height="38" > <?php bloginfo( 'name' ); ?>
+				<a class="navbar-brand hidden-md-down" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/tint-logo-white.png" alt="<?php bloginfo( 'name' ); ?>" width="38" height="38" class="d-inline-block align-top" > <?php bloginfo( 'name' ); ?>
+				</a>
+				<a class="navbar-brand hidden-sm-up" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/tint-logo-text-white.png" alt="<?php bloginfo( 'name' ); ?>" width="100" height="38" class="d-inline-block align-top" >
 				</a>
 				<div class="collapse navbar-collapse" id="navbarToggler">
 					<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu', 'menu_class' => 'navbar-nav mr-auto mt-2 mt-md-1' ) ); ?>

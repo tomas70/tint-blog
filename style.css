@@ -871,13 +871,14 @@ object {
     margin-left: 49px;
     font-family: "Avenir-Heavy";
     font-size: 20px;
-    line-height: 0.6;
+    line-height: 2.0;
     letter-spacing: 0.5px;
     color: #fff; }
     .site-header nav .navbar-brand:hover {
       color: #fff; }
     @media (max-width: 786px) {
       .site-header nav .navbar-brand {
+        margin-left: 35%;
         padding-left: 9px;
         padding-right: 9px; } }
   .site-header nav .navbar-collapse {
@@ -889,6 +890,10 @@ object {
       letter-spacing: 0.2px;
       color: #fff;
       padding: 10px 25px; }
+  .site-header nav .navbar-toggler {
+    border-color: transparent; }
+  .site-header nav .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
 
 .site-header .form-inline .form-control {
   padding: 5px 20px 3px;
