@@ -635,6 +635,13 @@ a {
 
 .menu--tertiary ul {
   float: right; }
+  @media (max-width: 786px) {
+    .menu--tertiary ul {
+      float: none;
+      margin: 0 auto; }
+      .menu--tertiary ul li {
+        float: none;
+        text-align: center; } }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -1107,6 +1114,13 @@ object {
   .cat-posts__heading-3 a {
     color: #2e2e31; }
 
+@media (max-width: 786px) {
+  .cat-posts {
+    padding: 28px 25px 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+    text-align: center; } }
+
 .strike-left {
   text-align: right;
   margin-left: 15px;
@@ -1130,14 +1144,14 @@ object {
       top: 50%;
       margin-right: 15px; }
 
-.user-icon-white, .user-icon-black, .date-icon-black, .date-icon-white {
+.user-icon-white, .user-icon-black, .date-icon-black, .cat-icon-black, .date-icon-white {
   background-image: url(img/user-icon-white.png);
   background-size: 14px 14px;
   background-repeat: no-repeat;
   background-position: 0px center;
   padding: 0 0 0 17px; }
 
-.user-icon-black, .date-icon-black {
+.user-icon-black, .date-icon-black, .cat-icon-black {
   background-image: url(img/user-icon-black.png);
   background-size: 12px 12px; }
 
@@ -1146,6 +1160,13 @@ object {
 
 .date-icon-black {
   background-image: url(img/date-icon-black.png); }
+
+.cat-icon-black {
+  background-image: url(img/cat-icon-black.png); }
+
+@media (max-width: 786px) {
+  .container {
+    margin: -30px 20px 30px; } }
 
 /*--------------------------------------------------------------
 # Author Page

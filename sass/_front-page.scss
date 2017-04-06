@@ -111,6 +111,12 @@
 	&__paragraph {
 		@extend .cat-recent-post__paragraph;
 	}
+	@media (max-width: 786px) {
+		padding: 28px 25px 10px;
+		background-color: #ffffff;
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+		text-align: center;
+	}
 }
 .strike-left {
 	@extend .strike-right;
@@ -158,4 +164,13 @@
 .date-icon-black {
 	background-image: url(img/date-icon-black.png);
 	@extend .user-icon-black;
+}
+.cat-icon-black {
+	background-image: url(img/cat-icon-black.png);
+	@extend .user-icon-black;
+}
+@media (max-width: 786px) {
+	.container {
+		margin: -30px 20px 30px;
+	}
 }
