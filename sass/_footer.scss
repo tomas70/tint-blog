@@ -98,3 +98,53 @@
 		}
 	}
 }
+.footer-up {
+	position: fixed;
+    z-index: 99999;
+    bottom: 0;
+    display: none;
+    width: 100%;
+    color: #fff;
+    background-image: linear-gradient(92deg, #ff564b, #ff5648 49%, #fa6037);
+    text-align: center;
+    &:hover {
+    	display: block;
+    }
+    form {
+    	padding: 7px;
+    	.form-group {
+    		margin-bottom: 0;    
+	    	label {
+		    	font-size: 14px;
+		    	letter-spacing: 0.5px;
+		    	color: #fff;
+		    	margin-right: 20px;
+		    	@media (max-width: 786px) {
+		    		font-size: 9px;
+		    		letter-spacing: 0.3px;
+		    		margin-left: 10px;
+		    	}
+		    }
+		    .btn-login {
+				background-color: transparent;
+				outline: none;
+				height: auto;
+				padding: 8px 15px;
+				color: #fff;
+				border: solid 1px #fff;
+				border-radius: 0px;
+				box-shadow: none;
+				font-size: 12px;
+				@media (max-width: 786px) {
+					font-size: 11px;
+					letter-spacing: 0.2px;
+					padding: 6px 5px;
+				}
+			}
+			.btn-login:hover,
+			.btn-login:focus {
+				color: #fff;
+			}
+		}
+    }
+}

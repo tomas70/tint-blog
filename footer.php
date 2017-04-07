@@ -86,6 +86,46 @@
         </div>
         <!-- /.container-fluid -->
 	</footer><!-- #colophon -->
+    <script type="text/javascript">
+        $(window).scroll(function(event) {
+            function footer()
+            {
+                var scroll = $(window).scrollTop(); 
+                if(scroll > 50)
+                { 
+                    $(".footer-up").fadeIn("slow").addClass("show");
+                }
+                else
+                {
+                    $(".footer-up").fadeOut("slow").removeClass("show");
+                }
+                
+                clearTimeout($.data(this, 'scrollTimer'));
+                $.data(this, 'scrollTimer', setTimeout(function() {
+                    if ($('.footer-up').is(':hover')) {
+                        footer();
+                    }
+                    else
+                    {
+                        $(".footer-up").fadeOut("slow");
+                    }
+                }, 2000));
+            }
+            footer();
+        });
+    </script>
+    <div class="container-fluid footer-up">
+        <div class="row">
+            <div class="col-12">
+                <form class="form-inline justify-content-center align-middle">
+                    <div class="form-group">
+                        <label>MARKETING NEWS DELIVERED WEEKLY TO YOUR INBOX</label>
+                        <button type="submit" class="btn btn-default btn-login">Sign up!</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
