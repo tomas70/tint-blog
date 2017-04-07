@@ -76,7 +76,7 @@
                         <form class="form-inline">
                           <div class="form-group">
                             <label for="InputEmail">Newsletter:</label>
-                            <input type="email" class="form-control" id="InputEmail" placeholder="yourname@company.com">
+                            <input type="email" class="form-control" id="InputEmail" size="22" placeholder="yourname@company.com">
                           </div>
                           <button type="submit" class="btn btn-default btn-login">Sign up</button>
                         </form>
