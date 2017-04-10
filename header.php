@@ -35,10 +35,15 @@
 				<a class="navbar-brand hidden-sm-up" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/tint-logo-text-white.png" alt="<?php bloginfo( 'name' ); ?>" width="100" height="38" class="d-inline-block align-top" >
 				</a>
+				<form class="form-inline ml-auto my-2 my-lg-0 hidden-sm-up" role="search" action="<?php echo site_url('/'); ?>" method="get" >
+					<input type="text" class="form-control ml-sm-3" placeholder="Learn More About TINT" name="s" id="search" value="<?php the_search_query(); ?>">
+					<img class="search-icon ml-sm-3" src="<?php echo get_template_directory_uri(); ?>/img/search-icon.png" width="16" height="16" >
+					<button type="reset" class="reset"><i class="fa fa-times" aria-hidden="true"></i></button>
+				</form>
 				<div class="collapse navbar-collapse" id="navbarToggler">
 					<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu', 'menu_class' => 'navbar-nav mr-auto mt-2 mt-md-1' ) ); ?>
 					
-					<form class="form-inline ml-auto my-2 my-lg-0" role="search" action="<?php echo site_url('/'); ?>" method="get" >
+					<form class="form-inline ml-auto my-2 my-lg-0 hidden-sm-down" role="search" action="<?php echo site_url('/'); ?>" method="get" >
 						<input type="text" class="form-control ml-sm-3" placeholder="Learn More About TINT" name="s" id="search" value="<?php the_search_query(); ?>">
 						<img class="search-icon ml-sm-3" src="<?php echo get_template_directory_uri(); ?>/img/search-icon.png" width="16" height="16" >
 						<button type="reset" class="reset"><i class="fa fa-times" aria-hidden="true"></i></button>
