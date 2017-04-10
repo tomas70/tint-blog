@@ -7,7 +7,7 @@
 		"uuidString": "2EE913FB-73BA-4CF2-81A1-00D12CFDB640"
 		}
 	],
-"creatorBuild": "25704",
+"creatorBuild": "25813",
 "files": {
 	"\/.jscsrc": {
 		"ft": 8192,
@@ -78,61 +78,67 @@
 	"\/img\/comment-icon-white.png": {
 		"ft": 32768,
 		"iS": 819,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/img\/comment-icon-white.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/img\/date-icon-black.png": {
 		"ft": 32768,
 		"iS": 1089,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/img\/date-icon-black.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/img\/date-icon-white.png": {
 		"ft": 32768,
 		"iS": 957,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/img\/date-icon-white.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/img\/empty-state-emoji.png": {
 		"ft": 32768,
 		"iS": 27191,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/img\/empty-state-emoji.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/img\/loupe.png": {
 		"ft": 32768,
 		"iS": 771,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/img\/loupe.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/img\/menu-items-copy-29.png": {
 		"ft": 32768,
 		"iS": 1257,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/img\/menu-items-copy-29.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/img\/menu-items-copy-29.svg": {
@@ -148,101 +154,111 @@
 	"\/img\/menu-items-copy-29@2x.png": {
 		"ft": 32768,
 		"iS": 2503,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/img\/menu-items-copy-29@2x.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/img\/menu-items-copy-29@3x.png": {
 		"ft": 32768,
 		"iS": 3831,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/img\/menu-items-copy-29@3x.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/img\/recommend-icon-white.png": {
 		"ft": 32768,
 		"iS": 1373,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/img\/recommend-icon-white.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/img\/search-icon.png": {
 		"ft": 32768,
 		"iS": 1437,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/img\/search-icon.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/img\/tint-logo-banner-ad.png": {
 		"ft": 32768,
 		"iS": 3957,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/img\/tint-logo-banner-ad.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/img\/tint-logo-text-white.png": {
 		"ft": 32768,
 		"iS": 2874,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/img\/tint-logo-text-white.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/img\/tint-logo-white.png": {
 		"ft": 32768,
 		"iS": 2266,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/img\/tint-logo-white.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/img\/twitter.png": {
 		"ft": 32768,
 		"iS": 2137,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/img\/twitter.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/img\/user-icon-black.png": {
 		"ft": 32768,
 		"iS": 1397,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/img\/user-icon-black.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/img\/user-icon-white.png": {
 		"ft": 32768,
 		"iS": 1166,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/img\/user-icon-white.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/inc\/custom-header.php": {
@@ -968,11 +984,12 @@
 	"\/screenshot.png": {
 		"ft": 32768,
 		"iS": 264,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/screenshot.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/search.php": {
@@ -2002,6 +2019,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-prototype-builtins": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-redeclare": {
 			"active": 1,
 			"optionString": "{'builtinGlobals': false}"
@@ -2826,14 +2847,6 @@
 		"orderOutput": 0,
 		"outputStyle": 1
 		},
-	"languageDefaultsJSX": {
-		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*.js",
-		"autoOutputPathRelativePath": "",
-		"autoOutputPathReplace1": "jsx",
-		"autoOutputPathReplace2": "js",
-		"autoOutputPathStyle": 0
-		},
 	"languageDefaultsKIT": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.html",
@@ -2896,7 +2909,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
-		"enableLossy": 1,
+		"optimizerType": 1,
 		"quality": 100
 		},
 	"languageDefaultsPUG": {
