@@ -1,8 +1,30 @@
 .author {
+	@media (max-width: 786px) {
+		background-color: #fbfbfb;
+	}
 	.author-header {
 		background-color: #fbfbfb;
 		padding: 42px 0;
 		margin-bottom: 36px;
+		@media (max-width: 786px) {
+			margin-top: 15px;
+			margin-bottom: 0;
+			padding: 10px 0;
+			.row {
+				margin-top: 33px;
+			}
+		}
+		&__text {
+			text-align: center;
+			font-family: $font__avenir-medium;
+			font-size: 24px;
+			line-height: 1.5;
+			color: #bababa;
+			@media (max-width: 786px) {
+				font-size: 14px;
+				line-height: 2.57;
+			}
+		}
 		.avatar {
 			border-radius: 100px;
 		}
@@ -12,12 +34,18 @@
 			line-height: 1.5;
 			margin-bottom: 0;
 			color: #2e2e31;
+			@media (max-width: 786px) {
+				font-size: 18px;
+			}
 		}
 		&__description {
 			font-family: $font__main;
 			font-size: 14px;
 			line-height: 1.57;
 			color: #3c3c40;
+			@media (max-width: 786px) {
+				margin-bottom: 0;
+			}
 		}
 		&__url {
 			font-family: $font__avenir-heavy;
@@ -25,12 +53,29 @@
 			&:hover, &:focus, &:visited {
 				color: #3c3c40;
 			}
+			@media (max-width: 786px) {
+				font-size: 12px
+			}
 		}
 	}
 	.cat-posts {
 		margin-bottom: 48px;
 		img {
 			margin-bottom: 19px;
+		}
+		@media (max-width: 786px) {
+			margin-bottom: 21.5px;
+			.row {
+				margin-bottom: 0;
+			}
+			img {
+				margin-bottom: 0;
+			}
+			&__heading-3 {
+				font-size: 12px;
+				padding: 0 25px 0 0;
+				text-align: left;
+			}
 		}
 	}
 }
