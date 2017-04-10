@@ -9,6 +9,7 @@
 
 get_header(); ?>
 
+<?php if ( have_posts() ) : ?>
 	<header class="category-header">
 		<div class="container">
 			<div class="row">
@@ -20,11 +21,9 @@ get_header(); ?>
 	</header>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
-
-		<div class="container">
+		<div class="container hidden-sm-down">
 			<div class="row">
-				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 					<div class="col-md-4 cat-posts">
 						<div class="row">
 							<div class="col">
@@ -35,11 +34,40 @@ get_header(); ?>
 							</div>
 						</div>
 					</div>
+				<?php endwhile; else : ?>
+				<header class="category-header">
+					<div class="container">
+						<div class="row">
+							<div class="col-12 category-header__text">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/empty-state-emoji.png" width="60" height="60">
+								<p>Oh no! We couldn’t find anything. Have a suggestion? We’d <span style="color: #fc3d3b;">love to hear from you</span>!</p>
+								Recommended For You:
+							</div>
+						</div>
+					</div>
+				</header>
+				
+			<?php endif; ?>
+				<?php wp_reset_query(); ?>
+				</div>
+			</div>
+			<div class="container hidden-sm-up">
+				<div class="row">
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+					<div class="col-12 cat-posts padding-zero">
+						<div class="row align-items-center">
+							<div class="col-4">
+								<?php the_post_thumbnail(array(100, 100)); ?>
+							</div>
+							<div class="col-8">
+								<h3 class="cat-posts__heading-3"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
+							</div>
+						</div>
+					</div>
 				<?php endwhile; endif; ?>
 				<?php wp_reset_query(); ?>
 			</div>
 		</div>
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
