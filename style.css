@@ -877,6 +877,9 @@ object {
 .site-header nav {
   background-image: -webkit-linear-gradient(357deg, #ff564b, #ff5648 49%, #fa6037);
   background-image: linear-gradient(93deg, #ff564b, #ff5648 49%, #fa6037); }
+  @media (max-width: 786px) {
+    .site-header nav {
+      min-height: 60px; } }
   .site-header nav .navbar-brand {
     margin-left: 49px;
     font-family: "Avenir-Heavy";
@@ -889,17 +892,23 @@ object {
     @media (max-width: 786px) {
       .site-header nav .navbar-brand {
         text-align: center;
-        margin-left: 0; } }
+        margin-left: calc(50% - 75px);
+        position: absolute; } }
   .site-header nav .custom-search input {
-    background: url("img/search-icon.png") no-repeat scroll right center/20px 20px;
+    position: absolute;
+    right: 20px;
+    top: 5px;
     padding-right: 20px;
+    background: url("img/search-icon.png") no-repeat scroll right center/20px 20px;
     -webkit-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
     width: 20px;
-    float: right;
+    height: 50px;
     border: 0; }
     .site-header nav .custom-search input:focus {
-      width: 100%; }
+      width: 90%;
+      background-color: #ff564b;
+      z-index: 1100; }
     .site-header nav .custom-search input::-webkit-input-placeholder {
       color: #fff; }
     .site-header nav .custom-search input:-moz-placeholder {
