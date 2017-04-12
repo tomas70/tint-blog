@@ -888,9 +888,35 @@ object {
       color: #fff; }
     @media (max-width: 786px) {
       .site-header nav .navbar-brand {
-        margin-left: 35%;
-        padding-left: 9px;
-        padding-right: 9px; } }
+        text-align: center;
+        margin-left: 0; } }
+  .site-header nav .custom-search input {
+    background: url("img/search-icon.png") no-repeat scroll right center/20px 20px;
+    padding-right: 20px;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    width: 20px;
+    float: right;
+    border: 0; }
+    .site-header nav .custom-search input:focus {
+      width: 100%; }
+    .site-header nav .custom-search input::-webkit-input-placeholder {
+      color: #fff; }
+    .site-header nav .custom-search input:-moz-placeholder {
+      color: #fff; }
+    .site-header nav .custom-search input::-moz-placeholder {
+      color: #fff; }
+    .site-header nav .custom-search input:-ms-input-placeholder {
+      color: #fff; }
+  .site-header nav .custom-search .reset {
+    display: none;
+    margin-left: 10px;
+    float: right;
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    font-size: 20px; }
   .site-header nav .navbar-collapse {
     margin-left: 40px; }
     .site-header nav .navbar-collapse .navbar-nav li > a {
