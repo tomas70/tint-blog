@@ -35,7 +35,7 @@
 				<a class="navbar-brand hidden-sm-up" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/tint-logo-text-white.png" alt="<?php bloginfo( 'name' ); ?>" width="100" height="38" class="align-top" >
 				</a>
-				<div class="custom-search">
+				<div class="custom-search hidden-sm-up">
 					<input type="text" class="form-control" placeholder="Learn More About TINT" name="s" id="search" value="<?php the_search_query(); ?>">
 				</div>
 				

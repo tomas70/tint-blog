@@ -907,7 +907,7 @@ object {
     border: 0; }
     .site-header nav .custom-search input:focus {
       width: 90%;
-      background-color: #ff564b;
+      background: #ff564b;
       z-index: 1100; }
     .site-header nav .custom-search input::-webkit-input-placeholder {
       color: #fff; }
