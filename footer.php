@@ -91,7 +91,7 @@
             function footer()
             {
                 var scroll = $(window).scrollTop(); 
-                if(scroll > 250)
+                if(scroll > 300)
                 { 
                     $(".footer-up").fadeIn("slow").addClass("show");
                 }
