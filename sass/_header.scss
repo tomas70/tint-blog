@@ -33,7 +33,7 @@
 				border: 0;
 					&:focus {
 					width: 90%;
-					background: #ff564b;
+					background: linear-gradient(93deg, #ff564b, #ff5648 49%, #fa6037);
 					z-index: 1100;
 				}
 				&::-webkit-input-placeholder {
@@ -61,6 +61,43 @@
 				border: 0;
 				color: #fff;
 				font-size: 20px;
+				@media (max-width: 786px) {
+					position: absolute;
+					right: 20px;
+					z-index: 10000;
+					top: 20px;
+				}
+			}
+		}
+		.share {
+			position: fixed;
+			z-index: 1000;
+			width: 100%;
+			height: 50px;
+			top: -50px;
+			left: 0;
+			background-image: linear-gradient(93deg, #ff564b, #ff5648 49%, #fa6037);
+			transition: top 0.67s linear;
+			color: #fff;
+			font-size: 16px;
+			.container {
+				margin: 18px 20px 0;
+			}
+			a {
+				color: #fff;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+			.link-share {
+				font-family: $font__avenir-medium;
+			}
+			.link-blog {
+				font-family: $font__avenir-heavy;
+				letter-spacing: 2px;
+			}
+			&.show {
+				top: 0;
 			}
 		}
 		.navbar-collapse {

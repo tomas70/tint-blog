@@ -91,7 +91,7 @@
             function footer()
             {
                 var scroll = $(window).scrollTop(); 
-                if(scroll > 50)
+                if(scroll > 250)
                 { 
                     $(".footer-up").fadeIn("slow").addClass("show");
                 }
@@ -109,12 +109,12 @@
                     {
                         $(".footer-up").fadeOut("slow");
                     }
-                }, 2000));
+                }, 3000));
             }
             footer();
         });
     </script>
-    <div class="container-fluid footer-up">
+    <div class="container-fluid footer-up hidden-sm-up">
         <div class="row">
             <div class="col-12">
                 <form class="form-inline justify-content-center align-middle">

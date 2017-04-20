@@ -37,7 +37,52 @@
 				</a>
 				<div class="custom-search hidden-sm-up">
 					<input type="text" class="form-control" placeholder="Learn More About TINT" name="s" id="search" value="<?php the_search_query(); ?>">
+					<button type="reset" class="reset"><i class="fa fa-times" aria-hidden="true"></i></button>
 				</div>
+				<div id="share" class="share hidden-sm-up">
+					<div class="container">
+						<div class="row">
+							<div class="col-3">
+								<a class="link-share" href="#">Share</a>
+							</div>
+							<div class="col-6 text-center">
+								<a class="link-blog" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">TINT BLOG</a>
+							</div>
+							<div class="col-3 text-center">
+								<img class="d-inline" style="margin-right: 17px;" src="<?php echo get_template_directory_uri(); ?>/img/comment-icon-white.png" width="15.8" height="auto">
+								<img class="d-inline" src="<?php echo get_template_directory_uri(); ?>/img/icon-like-normal@3x.png" width="15.8" height="auto">
+							</div>
+						</div>
+					</div>
+				</div>
+				<script type="text/javascript">
+					$(window).scroll(function(event) {
+			            function content()
+			            {
+			                var scroll = $(window).scrollTop(); 
+			                if(scroll > 50)
+			                { 
+			                    $(".share").fadeIn("slow").addClass("show");
+			                }
+			                else
+			                {
+			                    $(".share").fadeOut("slow").removeClass("show");
+			                }
+			                
+			                clearTimeout($.data(this, 'scrollTimer'));
+			                $.data(this, 'scrollTimer', setTimeout(function() {
+			                    if ($('.share').is(':hover')) {
+			                        footer();
+			                    }
+			                    else
+			                    {
+			                        $(".share").fadeOut("slow");
+			                    }
+			                }, 3000));
+			            }
+			            content();
+			        });
+				</script>
 				
 				<div class="collapse navbar-collapse" id="navbarToggler">
 					<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu', 'menu_class' => 'navbar-nav mr-auto mt-2 mt-md-1' ) ); ?>

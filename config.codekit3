@@ -119,6 +119,39 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/img\/icon-like-normal.png": {
+		"ft": 32768,
+		"iS": 434,
+		"oA": 0,
+		"oAP": "\/img\/icon-like-normal.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/icon-like-normal@2x.png": {
+		"ft": 32768,
+		"iS": 883,
+		"oA": 0,
+		"oAP": "\/img\/icon-like-normal@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/icon-like-normal@3x.png": {
+		"ft": 32768,
+		"iS": 1370,
+		"oA": 0,
+		"oAP": "\/img\/icon-like-normal@3x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/img\/loupe.png": {
 		"ft": 32768,
 		"iS": 771,
