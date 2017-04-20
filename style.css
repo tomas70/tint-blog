@@ -907,7 +907,8 @@ object {
     border: 0; }
     .site-header nav .custom-search input:focus {
       width: 90%;
-      background: #ff564b;
+      background: -webkit-linear-gradient(357deg, #ff564b, #ff5648 49%, #fa6037);
+      background: linear-gradient(93deg, #ff564b, #ff5648 49%, #fa6037);
       z-index: 1100; }
     .site-header nav .custom-search input::-webkit-input-placeholder {
       color: #fff; }
@@ -926,6 +927,38 @@ object {
     border: 0;
     color: #fff;
     font-size: 20px; }
+    @media (max-width: 786px) {
+      .site-header nav .custom-search .reset {
+        position: absolute;
+        right: 20px;
+        z-index: 10000;
+        top: 20px; } }
+  .site-header nav .share {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 50px;
+    top: -50px;
+    left: 0;
+    background-image: -webkit-linear-gradient(357deg, #ff564b, #ff5648 49%, #fa6037);
+    background-image: linear-gradient(93deg, #ff564b, #ff5648 49%, #fa6037);
+    -webkit-transition: top 0.67s linear;
+    transition: top 0.67s linear;
+    color: #fff;
+    font-size: 16px; }
+    .site-header nav .share .container {
+      margin: 18px 20px 0; }
+    .site-header nav .share a {
+      color: #fff; }
+      .site-header nav .share a:hover {
+        text-decoration: none; }
+    .site-header nav .share .link-share {
+      font-family: "Avenir-Medium"; }
+    .site-header nav .share .link-blog {
+      font-family: "Avenir-Heavy";
+      letter-spacing: 2px; }
+    .site-header nav .share.show {
+      top: 0; }
   .site-header nav .navbar-collapse {
     margin-left: 40px; }
     .site-header nav .navbar-collapse .navbar-nav li > a {
