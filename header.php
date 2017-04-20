@@ -60,7 +60,7 @@
 			            function content()
 			            {
 			                var scroll = $(window).scrollTop(); 
-			                if(scroll > 50)
+			                if(scroll < 300)
 			                { 
 			                    $(".share").fadeIn("slow").addClass("show");
 			                }
