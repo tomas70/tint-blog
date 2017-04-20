@@ -35,3 +35,83 @@ body {
   top: 50%;
   transform: translateY(-50%);
 }
+#overlay, #subscribe {
+    	display: none;
+    }
+#overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: #ff564b;
+    opacity: 0.9;
+    filter: alpha(Opacity=90);
+    z-index: 19999;
+}
+#subscribe	{
+    position: fixed;
+    top: 5%;
+    width: 90%;
+    background-color: transparent;
+    padding: 25px;
+    color: #fff;
+    z-index: 20000;
+    text-align: center;
+    .reset {
+    	float: right;
+		padding: 0;
+		background-color: transparent;
+		border: 0;
+		color: #fff;
+		font-size: 20px;
+	}
+	h1 {
+		font-family: $font__avenir-heavy;
+		margin-top: 200px;
+		margin-bottom: 5px;
+		line-height: 1.62;
+	}
+	p {
+		font-family: $font__avenir-medium;
+		font-size: 14px;
+		line-height: 1.71;
+		margin-bottom: 33px;
+	}
+	.form-group {
+		position: relative;
+		input[type="email"] {
+			border-radius: 100px;
+			border: 0;
+			height: 42px;
+			padding-left: 20px;
+			font-size: 12px;
+			&::-webkit-input-placeholder {
+				color: #2e2e31;
+			} 
+			&:-moz-placeholder {
+			    color: #2e2e31;
+			}			 
+			&::-moz-placeholder {
+			    color: #2e2e31;
+			}				 
+			&:-ms-input-placeholder {
+			    color: #2e2e31;
+			}
+		}
+		button {
+			position: absolute;
+			border-radius: 100px;
+			border: 0;
+			right: 2px;
+			top: 2px;
+			background-color: #2feccf;
+			color: #fff;
+			font-size: 12px;
+			height: 37px;
+			&:hover {
+				
+			}
+		}
+	}
+}

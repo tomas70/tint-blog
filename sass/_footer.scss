@@ -100,7 +100,7 @@
 }
 .footer-up {
 	position: fixed;
-    z-index: 99999;
+    z-index: 999;
     bottom: 0;
     display: none;
     width: 100%;
@@ -135,6 +135,7 @@
 				border-radius: 0px;
 				box-shadow: none;
 				font-size: 12px;
+				cursor: pointer;
 				@media (max-width: 786px) {
 					font-size: 11px;
 					letter-spacing: 0.2px;

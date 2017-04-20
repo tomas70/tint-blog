@@ -114,20 +114,51 @@
             footer();
         });
     </script>
+    <script type="text/javascript">
+        $(function(){
+            $('#submit').click(function(){
+                $('#subscribe').fadeIn(500);
+                $('#overlay').fadeIn(500);
+            });
+            $('#overlay').click(function(){
+                $('#subscribe').fadeOut(500);
+                $('#overlay').fadeOut(500);
+            });
+            $('#close').click(function(){
+                $('#subscribe').fadeOut(500);
+                $('#overlay').fadeOut(500);
+            });
+        });
+    </script>
     <div class="container-fluid footer-up hidden-sm-up">
         <div class="row">
             <div class="col-12">
                 <form class="form-inline justify-content-center align-middle">
                     <div class="form-group">
                         <label>MARKETING NEWS DELIVERED WEEKLY TO YOUR INBOX</label>
-                        <button type="submit" class="btn btn-default btn-login">Sign up!</button>
+                        <div id="submit" class="btn btn-default btn-login">Sign up!</div>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 </div><!-- #page -->
-
+<div id="overlay"></div>
+    <div id="subscribe" class="container">
+        <div class="row">
+            <div class="col">
+                <button type="reset" id="close" class="reset"><i class="fa fa-times" aria-hidden="true"></i></button>
+                <h1>Subscribe to our blog</h1>
+                <p>The latest strategies and superpowers delivered to your inbox.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="InputEmail" size="22" placeholder="yourname@company.com">
+                        <button type="submit" class="btn btn-default btn-login">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 <?php wp_footer(); ?>
 
 </body>
