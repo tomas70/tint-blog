@@ -538,11 +538,13 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue; }
+  color: royalblue;
+  text-decoration: none; }
   a:visited {
     color: purple; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: midnightblue;
+    text-decoration: none; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -576,6 +578,12 @@ a {
         left: 100%; }
       .main-navigation ul ul a {
         width: 200px; }
+      .main-navigation ul ul :hover > a,
+      .main-navigation ul ul .focus > a {
+        text-decoration: none; }
+      .main-navigation ul ul a:hover,
+      .main-navigation ul ul a.focus {
+        text-decoration: none; }
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
       left: auto; }
@@ -955,7 +963,8 @@ object {
     letter-spacing: 0.5px;
     color: #fff; }
     .site-header nav .navbar-brand:hover {
-      color: #fff; }
+      color: #fff;
+      text-decoration: none; }
     @media (max-width: 786px) {
       .site-header nav .navbar-brand {
         text-align: center;
@@ -1317,6 +1326,8 @@ object {
     text-transform: capitalize;
     letter-spacing: 0.3px;
     color: #ff564b; }
+    .strike-left__see-all:hover {
+      color: #ff564b; }
     .strike-left__see-all:before {
       display: inline-block;
       content: "";

@@ -16,7 +16,8 @@
 	<footer id="colophon" class="site-footer hidden-md-down" role="contentinfo">
 		<div class="container-fluid nopadding">
             <div class="row footer-nav">
-                
+                <div class="container">
+                    <div class="row">
                     <div class="col-md-2 offset-md-1">
                         <h3>Product</h3>
                         <ul class="list-group hidden-sm-down">
@@ -64,11 +65,14 @@
                             <i class="fa fa-twitter" aria-hidden="true"></i> <i class="fa fa-linkedin" aria-hidden="true"></i> <i class="fa fa-facebook" aria-hidden="true"></i> <i class="fa fa-instagram" aria-hidden="true"></i></li>
                         </div>
                     </div>
-                
+                    </div>
+                </div>
             </div>
             <!-- /.row -->
             
                 <div class="row footer">
+                    <div class="container">
+                    <div class="row">
                     <div class="col-lg-4 offset-lg-1">
                         <p>TINT © 2017 All Rights Reserved. Terms and Privacy</p>
                     </div>
@@ -82,7 +86,9 @@
                         </form>
                     </div>
                 </div>
+                </div>
             <!-- /.row footer -->
+            </div>
         </div>
         <!-- /.container-fluid -->
 	</footer><!-- #colophon -->
