@@ -43,6 +43,7 @@
 			font-size: 14px;
 			line-height: 1.57;
 			color: #3c3c40;
+			text-align: center;
 			@media (max-width: 786px) {
 				margin-bottom: 0;
 			}
@@ -55,6 +56,10 @@
 			}
 			@media (max-width: 786px) {
 				font-size: 12px
+			}
+			&--twitter {
+				font-size: 28px;
+				padding-left: 15px;
 			}
 		}
 	}

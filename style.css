@@ -305,13 +305,16 @@ textarea {
   line-height: 1.57; }
 
 strong {
-  font-family: "Avenir-Heavy";
-  color: #fc3d3b; }
+  font-family: "Avenir-Heavy"; }
 
 .entry-content p {
   font-size: 21px;
   line-height: 1.57;
   letter-spacing: normal; }
+
+.entry-content .strong--red {
+  font-family: "Avenir-Heavy";
+  color: #fc3d3b; }
 
 h1, h2, h3, h4, h5, h6 {
   clear: both; }
@@ -319,7 +322,8 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-family: "Avenir-Black";
   font-size: 23px;
-  line-height: 1.74; }
+  line-height: 1.74;
+  font-weight: 900; }
 
 p {
   margin-bottom: 1.5em; }
@@ -417,6 +421,22 @@ figure {
 table {
   margin: 0 0 1.5em;
   width: 100%; }
+
+.btn-default {
+  font-family: "Avenir-Black";
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  padding: 10px 65px 9px;
+  background-color: #ff564b;
+  border-radius: 100px;
+  color: #fff; }
+  .btn-default--subscribe {
+    margin-top: 40px; }
+  .btn-default--modal {
+    margin-top: 30px;
+    padding: 10px 40px 9px; }
+  .btn-default:active, .btn-default:focus, .btn-default:visited, .btn-default:hover {
+    color: #fff; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -537,19 +557,6 @@ textarea {
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
-a {
-  color: royalblue;
-  text-decoration: none; }
-  a:visited {
-    color: purple; }
-  a:hover, a:focus, a:active {
-    color: midnightblue;
-    text-decoration: none; }
-  a:focus {
-    outline: thin dotted; }
-  a:hover, a:active {
-    outline: 0; }
-
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
@@ -651,6 +658,69 @@ a {
         float: none;
         text-align: center; } }
 
+/* Mega Menu */
+#mega-menu-wrap-menu-2 #mega-menu-menu-2 > li.mega-menu-item {
+  height: 48px; }
+
+#mega-menu-wrap-menu-2 {
+  background: #fff;
+  padding-top: 12px; }
+
+#mega-menu-wrap-menu-2 #mega-menu-menu-2 > li.mega-menu-item.mega-toggle-on > a.mega-menu-link {
+  background: #fff;
+  color: #26e0bd;
+  border-bottom: 3px solid #26e0bd; }
+
+#mega-menu-wrap-menu-2 #mega-menu-menu-2 > li.mega-menu-item > a.mega-menu-link {
+  font-family: "Avenir-Heavy";
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  color: #bababa;
+  height: 48px; }
+  #mega-menu-wrap-menu-2 #mega-menu-menu-2 > li.mega-menu-item > a.mega-menu-link:hover, #mega-menu-wrap-menu-2 #mega-menu-menu-2 > li.mega-menu-item > a.mega-menu-link:focus {
+    background: #fff;
+    color: #26e0bd;
+    border-bottom: 3px solid #26e0bd; }
+  #mega-menu-wrap-menu-2 #mega-menu-menu-2 > li.mega-menu-item > a.mega-menu-link:after {
+    display: none; }
+
+.mega-menu-item-recent-posts-widget-with-thumbnails-2 .rpwwt-widget ul li {
+  float: left !important;
+  width: 33%;
+  padding-right: 25px !important; }
+  .mega-menu-item-recent-posts-widget-with-thumbnails-2 .rpwwt-widget ul li img {
+    float: none;
+    display: block;
+    margin: .3em .75em 1.75em 0; }
+
+#mega-menu-wrap-menu-2 #mega-menu-menu-2 li.mega-menu-item > ul.mega-sub-menu {
+  width: 160% !important;
+  margin-left: -35px;
+  background-color: #fbfbfb;
+  border: solid 1px #f6f6f6;
+  padding: 15px; }
+  #mega-menu-wrap-menu-2 #mega-menu-menu-2 li.mega-menu-item > ul.mega-sub-menu .rpwwt-post-title {
+    color: #2e2e31; }
+  #mega-menu-wrap-menu-2 #mega-menu-menu-2 li.mega-menu-item > ul.mega-sub-menu .menu-marketing-menu-container {
+    padding-top: 20px; }
+  #mega-menu-wrap-menu-2 #mega-menu-menu-2 li.mega-menu-item > ul.mega-sub-menu li ul {
+    margin-left: 0px; }
+    #mega-menu-wrap-menu-2 #mega-menu-menu-2 li.mega-menu-item > ul.mega-sub-menu li ul li {
+      float: none;
+      padding: 5px 0px; }
+      #mega-menu-wrap-menu-2 #mega-menu-menu-2 li.mega-menu-item > ul.mega-sub-menu li ul li.see-all {
+        padding-top: 30px; }
+        #mega-menu-wrap-menu-2 #mega-menu-menu-2 li.mega-menu-item > ul.mega-sub-menu li ul li.see-all a {
+          color: #ff564b;
+          font-size: 16px; }
+
+.mega-block-title {
+  font-family: "Avenir-Heavy" !important;
+  font-size: 20px !important;
+  line-height: 1.5;
+  color: #181818 !important;
+  text-transform: none !important; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -739,6 +809,85 @@ a {
   /* Make sure select elements fit in widgets. */ }
   .widget select {
     max-width: 100%; }
+  .widget__input {
+    border-top-color: #fff !important;
+    border-left-color: #fff !important;
+    border-right-color: #fff !important;
+    border-bottom-color: #e4e4e4;
+    font-family: "Avenir-Medium";
+    color: #3c3c40 !important;
+    letter-spacing: 0.2px;
+    font-size: 12px; }
+    .widget__input:focus {
+      color: #3c3c40;
+      border-top-color: #fff;
+      border-left-color: #fff;
+      border-right-color: #fff;
+      border-bottom-color: #e4e4e4;
+      font-family: "Avenir-Medium";
+      color: #3c3c40;
+      letter-spacing: 0.2px;
+      font-size: 12px; }
+    .widget__input::-webkit-input-placeholder {
+      font-family: "Avenir-Medium";
+      color: #3c3c40;
+      letter-spacing: 0.2px;
+      font-size: 12px; }
+    .widget__input:-moz-placeholder {
+      font-family: "Avenir-Medium";
+      color: #3c3c40;
+      letter-spacing: 0.2px;
+      font-size: 12px; }
+    .widget__input::-moz-placeholder {
+      font-family: "Avenir-Medium";
+      color: #3c3c40;
+      letter-spacing: 0.2px;
+      font-size: 12px; }
+    .widget__input:-ms-input-placeholder {
+      font-family: "Avenir-Medium";
+      color: #3c3c40;
+      letter-spacing: 0.2px;
+      font-size: 12px; }
+  .widget-heading {
+    font-family: "Avenir-Medium";
+    font-size: 19px;
+    line-height: 1.42;
+    text-align: center;
+    color: #181818; }
+  .widget-text {
+    font-family: "Avenir-Book";
+    font-size: 14px;
+    line-height: 1.36;
+    text-align: center;
+    color: #181818; }
+
+.subscribe-widget {
+  width: 298px;
+  border-radius: 2px;
+  border: solid 1px #e4e4e4;
+  margin: 0 auto;
+  padding: 35px 30px 50px 30px; }
+  .subscribe-widget--home {
+    width: 284px; }
+
+.modal-dialog {
+  max-width: 570px !important;
+  margin: 170px auto; }
+
+.modalcontent {
+  padding: 25px; }
+
+button.close {
+  position: absolute;
+  right: -10px;
+  top: -7px;
+  background: #e4e4e4;
+  width: 27px;
+  height: 27px;
+  opacity: 1;
+  color: #fff; }
+  button.close:hover {
+    opacity: 1; }
 
 /*--------------------------------------------------------------
 # Content
@@ -788,10 +937,14 @@ body {
   padding-left: 0 !important;
   padding-right: 0 !important; }
 
+.modalpadding {
+  padding-left: 0 !important;
+  padding-right: 15px !important; }
+
 .site-content {
   margin-top: 62px; }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .container-fluid {
     padding-right: 65px;
     padding-left: 65px; } }
@@ -956,13 +1109,13 @@ object {
     .site-header nav {
       min-height: 60px; } }
   .site-header nav .navbar-brand {
-    margin-left: 49px;
+    margin-left: 32px;
     font-family: "Avenir-Heavy";
     font-size: 20px;
     line-height: 2.0;
     letter-spacing: 0.5px;
     color: #fff; }
-    .site-header nav .navbar-brand:hover {
+    .site-header nav .navbar-brand:hover, .site-header nav .navbar-brand:focus, .site-header nav .navbar-brand:active {
       color: #fff;
       text-decoration: none; }
     @media (max-width: 786px) {
@@ -1036,7 +1189,8 @@ object {
     .site-header nav .share.show {
       top: 0; }
   .site-header nav .navbar-collapse {
-    margin-left: 40px; }
+    margin-left: 40px;
+    margin-right: 70px; }
     .site-header nav .navbar-collapse .navbar-nav li > a {
       font-family: "Avenir-Heavy";
       font-size: 14px;
@@ -1246,7 +1400,8 @@ object {
     width: 119px;
     padding: 9px 0;
     background-image: -webkit-linear-gradient(345deg, #ff564b, #ff5648 49%, #fa6037);
-    background-image: linear-gradient(105deg, #ff564b, #ff5648 49%, #fa6037); }
+    background-image: linear-gradient(105deg, #ff564b, #ff5648 49%, #fa6037);
+    margin-left: 5px; }
   .jumbotron__paragraph, .cat-recent-post__paragraph, .cat-posts__paragraph, .cat-posts__heading-3 {
     font-family: "Avenir-Heavy";
     font-size: 14px;
@@ -1262,17 +1417,17 @@ object {
   overflow: hidden;
   white-space: nowrap;
   margin-bottom: 20px; }
-  .strike-right__heading-3 {
+  .strike-right__heading-3, .single .recent-posts-widget-with-thumbnails h2 {
     position: relative;
     display: inline-block; }
-    .strike-right__heading-3 a {
+    .strike-right__heading-3 a, .single .recent-posts-widget-with-thumbnails h2 a {
       font-family: "Avenir-Black";
       font-size: 16px;
       text-transform: uppercase;
       letter-spacing: 1.8px;
       color: #ff564b;
       text-decoration: none; }
-    .strike-right__heading-3:after {
+    .strike-right__heading-3:after, .single .recent-posts-widget-with-thumbnails h2:after {
       display: inline-block;
       content: "";
       height: 2px;
@@ -1282,7 +1437,7 @@ object {
       left: 100%;
       top: 50%;
       margin-left: 15px; }
-    .strike-right__heading-3 ul {
+    .strike-right__heading-3 ul, .single .recent-posts-widget-with-thumbnails h2 ul {
       margin-left: -40px; }
 
 .cat-recent-post__heading-2 {
@@ -1406,7 +1561,8 @@ object {
     font-family: "Avenir-Book";
     font-size: 14px;
     line-height: 1.57;
-    color: #3c3c40; }
+    color: #3c3c40;
+    text-align: center; }
     @media (max-width: 786px) {
       .author .author-header__description, .author .author-header__url {
         margin-bottom: 0; } }
@@ -1417,6 +1573,9 @@ object {
     @media (max-width: 786px) {
       .author .author-header__url {
         font-size: 12px; } }
+    .author .author-header__url--twitter {
+      font-size: 28px;
+      padding-left: 15px; }
 
 .author .cat-posts {
   margin-bottom: 48px; }
@@ -1486,6 +1645,8 @@ object {
 --------------------------------------------------------------*/
 .single .jumbotron {
   margin-bottom: 0; }
+  .single .jumbotron-fluid:before {
+    top: 64px; }
 
 .single .single-post-header {
   background-color: #f6f6f6;
@@ -1495,17 +1656,81 @@ object {
     margin-bottom: 0;
     font-family: "Avenir-Heavy";
     font-size: 19px;
-    line-height: 1.42; }
-  .single .single-post-header .btn-download-ebook {
-    font-family: "Avenir-Black";
-    font-size: 12px;
-    letter-spacing: 0.4px;
-    padding: 10px 65px 9px;
-    background-color: #ff564b;
-    border-radius: 100px;
-    color: #fff; }
+    line-height: 1.42;
+    color: #656873; }
 
 .single .entry-title {
   font-family: "Avenir-Black";
   font-size: 23px;
   line-height: 1.74; }
+
+.single .sumome-share-client-bottom-center-article {
+  width: 100% !important; }
+
+.single .sumome-share-client a[title="SumoMe"] {
+  display: none !important; }
+
+.single .sumome-share-client-wrapper.sumome-share-client-wrapper-center {
+  margin-top: -410px; }
+
+.single .sumome-share-client-rounded .sumome-share-client-share {
+  border-radius: 5px !important; }
+
+.single .sumome-share-client-share {
+  position: relative !important;
+  height: 36px !important;
+  width: calc(16.6666667% - 17px) !important; }
+  .single .sumome-share-client-share img {
+    display: block !important;
+    width: 25px !important;
+    height: 25px !important;
+    margin: -5px auto; }
+
+.single .rp4wp-related-posts {
+  margin-top: 180px; }
+  .single .rp4wp-related-posts h3 {
+    font-family: "Avenir-Black";
+    font-size: 20px;
+    line-height: 1.7;
+    color: #181818;
+    border-top: 1px solid #f6f6f6;
+    padding-top: 35px; }
+  .single .rp4wp-related-posts ul {
+    padding: 0; }
+    .single .rp4wp-related-posts ul li {
+      float: left;
+      width: calc(33.3333337% - 18px);
+      margin-right: 27px; }
+      .single .rp4wp-related-posts ul li:nth-of-type(3) {
+        margin-right: 0px; }
+  .single .rp4wp-related-posts .rp4wp-related-post-content {
+    margin-top: 31px; }
+    .single .rp4wp-related-posts .rp4wp-related-post-content a {
+      font-family: "Avenir-Black";
+      font-size: 14px;
+      line-height: 1.36;
+      color: #2e2e31; }
+
+.single .recent-posts-widget-with-thumbnails {
+  text-align: left;
+  width: 298px;
+  margin: 0 auto; }
+  .single .recent-posts-widget-with-thumbnails h2 {
+    font-family: "Avenir-Black";
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    color: #ff564b;
+    text-decoration: none; }
+    .single .recent-posts-widget-with-thumbnails h2:after {
+      width: 125px; }
+  .single .recent-posts-widget-with-thumbnails .rpwwt-post-title {
+    font-family: "Avenir-Black";
+    font-size: 14px;
+    line-height: 1.36;
+    color: #2e2e31; }
+  .single .recent-posts-widget-with-thumbnails .rpwwt-post-author a, .single .recent-posts-widget-with-thumbnails .rpwwt-post-author span {
+    font-family: "Avenir-Medium";
+    font-size: 12px;
+    letter-spacing: 0.2px;
+    color: #282828; }

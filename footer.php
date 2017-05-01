@@ -136,7 +136,7 @@
             });
         });
     </script>
-    <div class="container-fluid footer-up hidden-sm-up">
+    <div class="container-fluid footer-up">
         <div class="row">
             <div class="col-12">
                 <form class="form-inline justify-content-center align-middle">

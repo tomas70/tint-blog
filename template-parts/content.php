@@ -10,7 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+	<!-- <header class="entry-header">
 		<?php
 		if ( is_single() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -19,12 +19,12 @@
 		endif;
 
 		if ( 'post' === get_post_type() ) : ?>
-		<!-- <div class="entry-meta">
+		<div class="entry-meta">
 			<?php tint_blog_posted_on(); ?>
-		</div> --><!-- .entry-meta -->
+		</div> --><!-- .entry-meta
 		<?php
 		endif; ?>
-	</header><!-- .entry-header -->
+	</header> .entry-header -->
 
 	<div class="entry-content">
 		<?php
@@ -40,8 +40,4 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php tint_blog_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

@@ -51,6 +51,36 @@
 		"oAP": "\/comments.php",
 		"oF": 0
 		},
+	"\/editor-style-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/editor-style-min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/editor-style-shared.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/editor-style-shared-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/editor-style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/editor-style-min.css",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/footer.php": {
 		"ft": 8192,
 		"oA": 2,

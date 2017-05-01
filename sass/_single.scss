@@ -1,6 +1,9 @@
 .single {
 	.jumbotron {
 		margin-bottom: 0;
+		&-fluid:before {
+			top: 64px;
+		}
 	}
 	.single-post-header {
 		background-color: #f6f6f6;
@@ -11,20 +14,104 @@
 			font-family: $font__avenir-heavy;
 			font-size: 19px;
 			line-height: 1.42;
-		}
-		.btn-download-ebook {
-			font-family: $font__avenir-black;
-			font-size: 12px;
-			letter-spacing: 0.4px;
-			padding: 10px 65px 9px;
-			background-color: #ff564b;
-			border-radius: 100px;
-			color: #fff;
+			color: #656873;
 		}
 	}
 	.entry-title {
 		font-family: $font__avenir-black;
 		font-size: 23px;
 		line-height: 1.74;
+	}
+	.sumome-share-client-bottom-center-article {
+		width: 100% !important;
+	}
+	.sumome-share-client {
+		a[title="SumoMe"] { 
+		    display: none !important;
+		}
+	}
+	.sumome-share-client-wrapper.sumome-share-client-wrapper-center {
+		margin-top: -410px;
+	}
+	.sumome-share-client-rounded .sumome-share-client-share {
+		border-radius: 5px !important;
+	}
+	.sumome-share-client-share {
+   		position: relative !important;
+   		height: 36px !important;
+   		width: calc(16.6666667% - 17px) !important;
+
+    	img {
+    		display: block !important;
+		    width: 25px !important;
+		    height: 25px !important;
+		    margin: -5px auto;
+    	}
+	}
+	.rp4wp-related-posts {
+		margin-top: 180px;
+
+		h3 {
+			font-family: $font__avenir-black;
+			font-size: 20px;
+			line-height: 1.7;
+			color: #181818;
+			border-top: 1px solid #f6f6f6;
+    		padding-top: 35px;
+		}
+		ul {
+			padding: 0;
+
+			li {
+				float: left;
+				width: calc(33.3333337% - 18px);
+    			margin-right: 27px;
+
+				&:nth-of-type(3) {
+					margin-right: 0px
+				}
+			}
+		}
+		.rp4wp-related-post-content {
+			margin-top: 31px;
+
+			a {
+				font-family: $font__avenir-black;
+				font-size: 14px;
+				line-height: 1.36;
+				color: #2e2e31;
+			}
+		}
+	}
+
+	.recent-posts-widget-with-thumbnails {
+		text-align: left;
+		width: 298px;
+		margin: 0 auto;
+		h2 {
+			@extend .strike-right__heading-3;
+			font-family: $font__avenir-black;
+			font-size: 16px;
+			text-transform: uppercase;
+			letter-spacing: 1.8px;
+	    	color: #ff564b;
+	    	text-decoration: none;
+
+	    	&:after {
+	    		width: 125px;
+	    	}
+		}
+		.rpwwt-post-title {
+			font-family: $font__avenir-black;
+			font-size: 14px;
+			line-height: 1.36;
+			color: #2e2e31;
+		}
+		.rpwwt-post-author a, .rpwwt-post-author span {
+			font-family: $font__avenir-medium;
+			font-size: 12px;
+			letter-spacing: 0.2px;
+			color: #282828;
+		}
 	}
 }

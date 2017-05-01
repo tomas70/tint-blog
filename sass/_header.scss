@@ -5,13 +5,13 @@
 			min-height: 60px;
 		}
 		.navbar-brand {
-			margin-left: 49px;
+			margin-left: 32px;
 			font-family: $font__avenir-heavy;
 			font-size: 20px;
 			line-height: 2.0;
 			letter-spacing: 0.5px;
 			color: #fff;
-			&:hover {
+			&:hover, &:focus, &:active {
 				color: #fff;
 				text-decoration: none;
 			}
@@ -103,6 +103,7 @@
 		}
 		.navbar-collapse {
 			margin-left: 40px;
+			margin-right: 70px;
 			.navbar-nav {
 				li > a {
 					font-family: $font__avenir-heavy;

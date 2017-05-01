@@ -16,13 +16,13 @@ get_header(); ?>
 			<div class="col-1">
 				<?php echo get_avatar( $curauth, 60 ); ?>
 			</div>
-			<div class="col-3 nopadding">
-				<h2 class="author-header__heading-2"><?php echo $curauth->first_name; ?> <?php echo $curauth->last_name; ?> <i class="fa fa-twitter" aria-hidden="true"></i></h2>
+			<div class="col-2 nopadding">
+				<h2 class="author-header__heading-2"><?php echo $curauth->first_name; ?> <?php echo $curauth->last_name; ?> <a target="_blank" class="author-header__url author-header__url--twitter" href="http://www.twitter.com/<?php echo get_the_author_meta('twitter'); ?>"><i class="fa fa-twitter" aria-hidden="true"></i></a></h2>
 			</div>
-			<div class="col-6 author-header__description">
+			<div class="col-5 author-header__description nopadding">
 				<?php echo $curauth->user_description; ?>
 			</div>
-			<div class="col-2">
+			<div class="col-2 nopadding">
 				<a class="author-header__url" href="<?php echo $curauth->user_url; ?>"><?php echo $curauth->user_url; ?></a>
 			</div>
 		</div>
@@ -46,21 +46,30 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-		<div class="container hidden-sm-down">
+		<div class="container-fluid hidden-sm-down">
 			<div class="row">
-				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-					<div class="col-md-4 cat-posts">
-						<div class="row">
-							<div class="col">
-								<?php the_post_thumbnail(); ?>
-							
-								<h3 class="cat-posts__heading-3"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
-								<p class="cat-posts__paragraph"><span class="user-icon-black"> <?php the_author_posts_link(); ?></span> <span class="date-icon-black"> <?php the_time('jS F'); ?></span></p>
+				<div class="col-md-8">
+					<div class="row">
+						<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+							<div class="col-md-4 cat-posts">
+								<div class="row">
+									<div class="col">
+										<?php the_post_thumbnail('archive-results'); ?>
+									
+										<h3 class="cat-posts__heading-3"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
+										<p class="cat-posts__paragraph"><span class="user-icon-black"> <?php the_author_posts_link(); ?></span> <span class="date-icon-black"> <?php the_time('jS F'); ?></span></p>
+									</div>
+								</div>
 							</div>
-						</div>
+						<?php endwhile; endif; ?>
+						<?php wp_reset_query(); ?>
 					</div>
-				<?php endwhile; endif; ?>
-				<?php wp_reset_query(); ?>
+				</div>
+				<div class="col-md-4 sidebar">
+	 				<?php if ( is_active_sidebar( 'home-sidebar' ) ) : ?>
+	 						<?php dynamic_sidebar( 'home-sidebar' ); ?>
+	 				<?php endif; ?>
+	 			</div>
 			</div>
 		</div>
 		<div class="container hidden-sm-up">
