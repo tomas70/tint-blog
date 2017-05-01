@@ -178,29 +178,12 @@
 	}
 }
 
-.mega-menu-item-recent-posts-widget-with-thumbnails-2 {
-	.rpwwt-widget ul li {
-		float: left !important;
-    	width: 33%;
-    	padding-right: 25px !important;
-    	img {
-			float: none;
-			display: block;
-			margin: .3em .75em 1.75em 0;
-		}
-	}
-}
-
 #mega-menu-wrap-menu-2 #mega-menu-menu-2 li.mega-menu-item > ul.mega-sub-menu {
 	width: 160% !important;
 	margin-left: -35px;
 	background-color: #fbfbfb;
 	border: solid 1px #f6f6f6;
 	padding: 15px;
-
-	.rpwwt-post-title {
-		color: #2e2e31;
-	}
 
 	.menu-marketing-menu-container {
 		padding-top: 20px;
@@ -231,4 +214,14 @@
 	line-height: 1.5;
 	color: #181818 !important;
 	text-transform: none !important;
+}
+
+.rpwe-li {
+	float: left !important;
+	width: 33%;
+}
+
+.rpwe-title a {
+	line-height: 1.36;
+	color: #2e2e31 !important;
 }

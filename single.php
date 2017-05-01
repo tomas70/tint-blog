@@ -16,7 +16,7 @@ get_header(); ?>
 		$backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($recent["ID"]), 'full' );
 		}
 	?>
-	<div class="jumbotron jumbotron-fluid" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat; background-size: cover; height: 521px">
+	<div class="jumbotron jumbotron-fluid hidden-sm-down" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat; background-size: cover; height: 521px">
 		<div class="container-fluid valign">
 		<h3 class="jumbotron__heading-3">Most Recent</h3>
 		<?php
@@ -30,7 +30,7 @@ get_header(); ?>
 			<p class="jumbotron__paragraph"><span class="user-icon-white"> <?php the_author_posts_link(); ?></span> <span class="date-icon-white"> <?php the_time('M j'); ?></span></p>
 		</div>
 	</div>
-	<div class="container-fluid nopadding">
+	<div class="container-fluid nopadding hidden-lg-down">
 		<div class="row align-items-center single-post-header">
 			<div class="col-md-9">
 				<p>Need help creating content quickly? Download our latest marketing guide!</p>
@@ -67,7 +67,7 @@ get_header(); ?>
 				<div class="row">
 					<div class="col">
 						<div class="row">
-							<div class="col-md-8">
+							<div class="col-md-12 col-lg-8">
 								<div class="row">
 									<div class="col">
 									<?php
@@ -85,7 +85,7 @@ get_header(); ?>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-4 sidebar hidden-sm-down">
+							<div class="col-md-4 sidebar hidden-md-down">
 				 				<?php if ( is_active_sidebar( 'post-sidebar' ) ) : ?>
 				 						<?php dynamic_sidebar( 'post-sidebar' ); ?>
 				 				<?php endif; ?>

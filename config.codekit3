@@ -105,6 +105,16 @@
 		"oAP": "\/header.php",
 		"oF": 0
 		},
+	"\/img\/close-icon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/close-icon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/img\/comment-icon-white.png": {
 		"ft": 32768,
 		"iS": 819,
@@ -423,6 +433,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/LICENSE",
+		"oF": 0
+		},
+	"\/page-search.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-search.php",
 		"oF": 0
 		},
 	"\/page.php": {

@@ -194,7 +194,10 @@ get_header(); ?>
 	<div class="container">
 		<div class="col-12 cat-posts">
 			<h3 class="cat-posts__heading-3"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
-			<p class="cat-posts__paragraph"><span class="user-icon-black"> <?php the_author_posts_link(); ?></span> <span class="date-icon-black"> <?php the_time('F j'); ?></span> <span class="cat-icon-black"><?php foreach((get_the_category()) as $category) { echo $category->cat_name . ' '; } ?> </span></p>
+			<p class="cat-posts__paragraph"><span class="user-icon-black"> <?php the_author_posts_link(); ?></span> <span class="date-icon-black"> <?php the_time('F j'); ?></span> <span class="cat-icon-black"><?php $categories = get_the_category();
+				if ( ! empty( $categories ) ) {
+				    echo '<a href="' . esc_url( get_category_link( $categories[0]->term_id ) ) . '">' . esc_html( $categories[0]->name ) . '</a>';
+				} ?> </span></p>
 		</div>
 	</div>
 	<?php endwhile; endif; ?>

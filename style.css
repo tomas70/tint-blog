@@ -548,6 +548,9 @@ textarea {
 
 .sidebar {
   text-align: center; }
+  @media screen and (max-width: 1199px) {
+    .sidebar {
+      padding-top: 25px; } }
   .sidebar li {
     list-style: none; }
 
@@ -684,23 +687,12 @@ textarea {
   #mega-menu-wrap-menu-2 #mega-menu-menu-2 > li.mega-menu-item > a.mega-menu-link:after {
     display: none; }
 
-.mega-menu-item-recent-posts-widget-with-thumbnails-2 .rpwwt-widget ul li {
-  float: left !important;
-  width: 33%;
-  padding-right: 25px !important; }
-  .mega-menu-item-recent-posts-widget-with-thumbnails-2 .rpwwt-widget ul li img {
-    float: none;
-    display: block;
-    margin: .3em .75em 1.75em 0; }
-
 #mega-menu-wrap-menu-2 #mega-menu-menu-2 li.mega-menu-item > ul.mega-sub-menu {
   width: 160% !important;
   margin-left: -35px;
   background-color: #fbfbfb;
   border: solid 1px #f6f6f6;
   padding: 15px; }
-  #mega-menu-wrap-menu-2 #mega-menu-menu-2 li.mega-menu-item > ul.mega-sub-menu .rpwwt-post-title {
-    color: #2e2e31; }
   #mega-menu-wrap-menu-2 #mega-menu-menu-2 li.mega-menu-item > ul.mega-sub-menu .menu-marketing-menu-container {
     padding-top: 20px; }
   #mega-menu-wrap-menu-2 #mega-menu-menu-2 li.mega-menu-item > ul.mega-sub-menu li ul {
@@ -720,6 +712,14 @@ textarea {
   line-height: 1.5;
   color: #181818 !important;
   text-transform: none !important; }
+
+.rpwe-li {
+  float: left !important;
+  width: 33%; }
+
+.rpwe-title a {
+  line-height: 1.36;
+  color: #2e2e31 !important; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -1148,7 +1148,6 @@ object {
     .site-header nav .custom-search input:-ms-input-placeholder {
       color: #fff; }
   .site-header nav .custom-search .reset {
-    display: none;
     margin-left: 10px;
     float: right;
     padding: 0;
@@ -1166,8 +1165,8 @@ object {
     position: fixed;
     z-index: 1000;
     width: 100%;
-    height: 50px;
-    top: -50px;
+    height: 64px;
+    top: 0px;
     left: 0;
     background-image: -webkit-linear-gradient(357deg, #ff564b, #ff5648 49%, #fa6037);
     background-image: linear-gradient(93deg, #ff564b, #ff5648 49%, #fa6037);
@@ -1175,7 +1174,7 @@ object {
     transition: top 0.67s linear;
     color: #fff;
     font-size: 16px; }
-    .site-header nav .share .container {
+    .site-header nav .share .container-fluid {
       margin: 18px 20px 0; }
     .site-header nav .share a {
       color: #fff; }
@@ -1229,7 +1228,6 @@ object {
   margin-left: 10px; }
 
 .site-header .form-inline .reset {
-  display: none;
   margin-left: 10px;
   padding: 0;
   background-color: transparent;
@@ -1239,6 +1237,20 @@ object {
 
 .site-header .form-inline input[type="search"] {
   -webkit-appearance: textfield; }
+
+.search-menu-container {
+  position: absolute;
+  right: 85px; }
+  .search-menu-container a {
+    font-family: "Avenir-Heavy";
+    font-size: 14px;
+    line-height: 0.86;
+    letter-spacing: 0.2px;
+    color: #fff; }
+    .search-menu-container a.demo {
+      border: 1px solid #fff;
+      border-radius: 100px;
+      padding: 5px 30px; }
 
 /*--------------------------------------------------------------
 # Footer
@@ -1597,45 +1609,45 @@ object {
 # Category Page
 --------------------------------------------------------------*/
 @media (max-width: 786px) {
-  .category, .search {
+  .category, .search, .page {
     background-color: #fbfbfb; } }
 
-.category .category-header, .search .category-header {
+.category .category-header, .search .category-header, .page .category-header {
   background-color: #fbfbfb;
   padding: 42px 0;
   margin-bottom: 36px; }
   @media (max-width: 786px) {
-    .category .category-header, .search .category-header {
+    .category .category-header, .search .category-header, .page .category-header {
       margin-top: 25px;
       margin-bottom: 0;
       padding: 10px 0; } }
-  .category .category-header__text, .search .category-header__text {
+  .category .category-header__text, .search .category-header__text, .page .category-header__text {
     text-align: center;
     font-family: "Avenir-Medium";
     font-size: 24px;
     line-height: 1.5;
     color: #bababa; }
-    .category .category-header__text p, .search .category-header__text p {
+    .category .category-header__text p, .search .category-header__text p, .page .category-header__text p {
       color: #131313; }
     @media (max-width: 786px) {
-      .category .category-header__text, .search .category-header__text {
+      .category .category-header__text, .search .category-header__text, .page .category-header__text {
         font-size: 14px;
         line-height: 2.57; }
-        .category .category-header__text img, .search .category-header__text img {
+        .category .category-header__text img, .search .category-header__text img, .page .category-header__text img {
           margin-top: 35px; } }
 
-.category .cat-posts, .search .cat-posts {
+.category .cat-posts, .search .cat-posts, .page .cat-posts {
   margin-bottom: 48px; }
-  .category .cat-posts img, .search .cat-posts img {
+  .category .cat-posts img, .search .cat-posts img, .page .cat-posts img {
     margin-bottom: 19px; }
   @media (max-width: 786px) {
-    .category .cat-posts, .search .cat-posts {
+    .category .cat-posts, .search .cat-posts, .page .cat-posts {
       margin-bottom: 21.5px; }
-      .category .cat-posts .row, .search .cat-posts .row {
+      .category .cat-posts .row, .search .cat-posts .row, .page .cat-posts .row {
         margin-bottom: 0; }
-      .category .cat-posts img, .search .cat-posts img {
+      .category .cat-posts img, .search .cat-posts img, .page .cat-posts img {
         margin-bottom: 0; }
-      .category .cat-posts__heading-3, .search .cat-posts__heading-3 {
+      .category .cat-posts__heading-3, .search .cat-posts__heading-3, .page .cat-posts__heading-3 {
         font-size: 12px;
         padding: 0 25px 0 0;
         text-align: left; } }
@@ -1660,9 +1672,18 @@ object {
     color: #656873; }
 
 .single .entry-title {
-  font-family: "Avenir-Black";
+  font-family: "Avenir-Medium";
   font-size: 23px;
-  line-height: 1.74; }
+  line-height: 1.57;
+  color: #282828;
+  padding-top: 15px; }
+
+.single .entry-meta {
+  padding-bottom: 30px; }
+  .single .entry-meta span {
+    padding-right: 10px; }
+    .single .entry-meta span a {
+      color: #282828; }
 
 .single .sumome-share-client-bottom-center-article {
   width: 100% !important; }

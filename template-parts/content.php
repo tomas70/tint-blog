@@ -10,7 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<!-- <header class="entry-header">
+	 <header class="entry-header hidden-md-up">
 		<?php
 		if ( is_single() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -20,11 +20,18 @@
 
 		if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php tint_blog_posted_on(); ?>
-		</div> --><!-- .entry-meta
+			<span class="user-icon-black"> <?php the_author_posts_link(); ?></span> <span class="date-icon-black"> <?php the_time('M j'); ?></span>
+			<span>
+			<?php $categories = get_the_category();
+				if ( ! empty( $categories ) ) {
+				    echo '<a href="' . esc_url( get_category_link( $categories[0]->term_id ) ) . '">' . esc_html( $categories[0]->name ) . '</a>';
+				} ?>
+			</span>
+		</div>
 		<?php
 		endif; ?>
-	</header> .entry-header -->
+		<?php echo get_the_post_thumbnail( $post_id, 'large' ); ?>
+	</header> 
 
 	<div class="entry-content">
 		<?php
