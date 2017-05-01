@@ -19,7 +19,7 @@ get_header(); ?>
 	</header>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-		<div class="container hidden-sm-down">
+		<div class="container hidden-md-down">
 			<div class="row">
 				<div class="col-md-8">
 					<?php query_posts('posts_per_page=9'); ?>
@@ -33,7 +33,7 @@ get_header(); ?>
 						<?php endwhile; endif; ?>
 					</div>
 				</div>
-				<div class="col-md-4 sidebar">
+				<div class="col-md-4 sidebar hidden-md-down">
 	 				<?php if ( is_active_sidebar( 'home-sidebar' ) ) : ?>
 	 						<?php dynamic_sidebar( 'home-sidebar' ); ?>
 	 				<?php endif; ?>
@@ -41,7 +41,7 @@ get_header(); ?>
  			</div>
 		</div>
 		<?php wp_reset_query(); ?>
-			<div class="container hidden-sm-up">
+			<div class="container-fluid hidden-lg-up">
 			<?php query_posts('posts_per_page=9'); ?>
 				<div class="row">
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

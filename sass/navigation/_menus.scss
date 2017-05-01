@@ -138,8 +138,10 @@
 			@media (max-width: 786px) {
 				float: none;
 				margin: 0 auto;
+				width: 185px;
+				margin-top: 0px !important;
 				li {
-					float: none;
+					float: left;
 					text-align: center;
 				}
 			}
@@ -215,7 +217,9 @@
 	color: #181818 !important;
 	text-transform: none !important;
 }
-
+.rpwe-block li {
+	border-bottom: 0 !important;
+}
 .rpwe-li {
 	float: left !important;
 	width: 33%;
@@ -224,4 +228,8 @@
 .rpwe-title a {
 	line-height: 1.36;
 	color: #2e2e31 !important;
+}
+
+.rpwe-thumb {
+	border: 0 !important;
 }

@@ -186,18 +186,20 @@ get_header(); ?>
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-12 nopadding">
+			<div class="col-12 nopadding responsive-thumb">
 				<?php the_post_thumbnail('responsive-blog'); ?>
 			</div>
 		</div>
 	</div>
-	<div class="container">
+	<div class="container responsive-post">
 		<div class="col-12 cat-posts">
-			<h3 class="cat-posts__heading-3"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
-			<p class="cat-posts__paragraph"><span class="user-icon-black"> <?php the_author_posts_link(); ?></span> <span class="date-icon-black"> <?php the_time('F j'); ?></span> <span class="cat-icon-black"><?php $categories = get_the_category();
-				if ( ! empty( $categories ) ) {
-				    echo '<a href="' . esc_url( get_category_link( $categories[0]->term_id ) ) . '">' . esc_html( $categories[0]->name ) . '</a>';
-				} ?> </span></p>
+			<div class="responsive-post__content">
+				<h3 class="cat-posts__heading-3"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
+				<p class="cat-posts__paragraph"><span class="user-icon-black"> <?php the_author_posts_link(); ?></span> <span class="date-icon-black"> <?php the_time('F j'); ?></span> <span class="cat-icon-black"><?php $categories = get_the_category();
+					if ( ! empty( $categories ) ) {
+					    echo '<a href="' . esc_url( get_category_link( $categories[0]->term_id ) ) . '">' . esc_html( $categories[0]->name ) . '</a>';
+					} ?> </span></p>
+			</div>
 		</div>
 	</div>
 	<?php endwhile; endif; ?>

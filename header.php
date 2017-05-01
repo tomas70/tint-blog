@@ -47,9 +47,16 @@
 					</div>
 				</div>
 				<?php } else { ?>
-				<button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+				<div class="menu-trigger second">
+				  <span class="line line-1"></span>
+				  <span class="line line-2"></span>
+				  <span class="line line-3"></span>
+				</div>
+				<nav class="fullscreen-menu">
+			      <ul>
+			        <?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu', 'menu_class' => 'navbar-nav mr-auto mt-2 mt-md-1' ) ); ?>
+			      </ul>
+			    </nav>
 				<a class="navbar-brand hidden-lg-up" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/tint-logo-text-white.png" alt="<?php bloginfo( 'name' ); ?>" width="100" height="38" class="align-top" >
 				</a>

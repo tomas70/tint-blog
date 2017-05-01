@@ -110,6 +110,8 @@ function tint_blog_widgets_init() {
 function tint_blog_scripts() {
 	wp_enqueue_style( 'tint-blog-style', get_stylesheet_uri() );
 
+	wp_enqueue_script( 'tint-blog-scripts', get_template_directory_uri() . '/js/scripts.js', array(), '20151215', true );
+
 	wp_enqueue_script( 'tint-blog-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'tint-blog-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
