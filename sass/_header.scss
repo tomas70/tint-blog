@@ -1,21 +1,24 @@
 .site-header {
-	nav {
+	nav.navbar {
 		background-image: linear-gradient(93deg, #ff564b, #ff5648 49%, #fa6037);
-		@media (max-width: 786px) {
+		@media (max-width: 992px) {
 			min-height: 60px;
 		}
 		.navbar-brand {
-			margin-left: 49px;
+			margin-left: 32px;
 			font-family: $font__avenir-heavy;
 			font-size: 20px;
 			line-height: 2.0;
 			letter-spacing: 0.5px;
 			color: #fff;
-			&:hover {
+			visibility: visible;
+			opacity: 1;			
+			transition: visibility 0.5s linear 0.5s, opacity 0.5s linear;
+			&:hover, &:focus, &:active {
 				color: #fff;
 				text-decoration: none;
 			}
-			@media (max-width: 786px) {
+			@media (max-width: 992px) {
 				text-align: center;
 				margin-left: calc(50% - 75px);
 				position: absolute;
@@ -54,7 +57,6 @@
 				}
 			}
 			.reset {
-				display: none;
 				margin-left: 10px;
 				float: right;
 				padding: 0;
@@ -74,14 +76,14 @@
 			position: fixed;
 			z-index: 1000;
 			width: 100%;
-			height: 50px;
-			top: -50px;
+			height: 64px;
+			top: 0px;
 			left: 0;
 			background-image: linear-gradient(93deg, #ff564b, #ff5648 49%, #fa6037);
 			transition: top 0.67s linear;
 			color: #fff;
 			font-size: 16px;
-			.container {
+			.container-fluid {
 				margin: 18px 20px 0;
 			}
 			a {
@@ -103,6 +105,13 @@
 		}
 		.navbar-collapse {
 			margin-left: 40px;
+			margin-right: 70px;
+			&.collapsing {
+				height: 100vh;
+			}
+			@media screen and (max-width: 992px) {
+				height: 100vh;
+			}
 			.navbar-nav {
 				li > a {
 					font-family: $font__avenir-heavy;
@@ -157,7 +166,6 @@
 			margin-left: 10px;
 		}
 		.reset {
-			display: none;
 			margin-left: 10px;
 			padding: 0;
 			background-color: transparent;
@@ -168,5 +176,125 @@
 		input[type="search"] {
 		 	-webkit-appearance: textfield;
 		}
+	}
+}
+.search-menu-container {
+	position: absolute;
+	right: 85px;
+
+	a {
+		font-family: $font__avenir-heavy;
+	    font-size: 14px;
+	    line-height: 0.86;
+	    letter-spacing: 0.2px;
+	    color: #fff;
+
+	    &.demo {
+	    	border: 1px solid #fff;
+	    	border-radius: 100px;
+    		padding: 5px 30px;
+	    }
+	}
+}
+
+.menu-trigger{
+  transition: all 0.5s 0s;
+  width: 26px;
+  height: 20px;
+  vertical-align: top;
+  cursor: pointer;
+  position: relative;
+  z-index: 999;
+  .line{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    background: #fff;
+    transition: 0.3s;
+    &.line-1{
+      transition: all 0.3s 0.3s, transform 0.3s 0s;
+    }
+    &.line-2{
+      top: 50%;
+      margin-top: -1px;
+      left: 0;
+      transition: all 0.3s 0.3s;
+    }
+    &.line-3{
+      bottom: 0;
+      top: auto;
+      left: 0;
+      transition: all 0.3s 0.3s, transform 0.3s 0s;
+    }
+  }
+  &.active{
+    transform: rotate(135deg);
+    transition: all 0.5s 0.3s;
+    .line{
+      background: #fff;
+    }
+    .line-1{
+      top: 50%;
+      margin-top: -1px;
+      transform: rotate(90deg);
+      transition: all 0.3s, transform 0.3s 0.3s;
+    }
+    .line-2{
+      opacity: 0;
+      transition: all 0.3s, opacity 0.3s 0s;
+    }
+    .line-3{
+      bottom: 50%;
+      margin-bottom: -1px;
+      transform: rotate(0deg);
+      transition: all 0.3s, transform 0.3s 0.3s;
+    }
+  }
+}
+
+.fullscreen-menu {
+	text-align: left;
+	position: fixed;
+	left: 100%;
+	width: 109%;
+	height: 100vh;
+	top: 0;
+	float: none;
+	padding: 20px;
+	padding-right: 3.25em;
+	display: table;
+	transition: 0.5s 0.2s cubic-bezier(0.9, 0.3, 0.3, 1.02);
+	&:after{
+		content: "";
+		background-image: linear-gradient(154deg, #ff564b, #ff5648 49%, #fa6037);
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0.9;
+		z-index: -1;
+	}
+}
+
+header.active {
+	.navbar {
+		.navbar-brand {
+			visibility:hidden;
+			opacity: 0;
+			transition-delay: 0s;
+		}
+	}
+	.fullscreen-menu {
+        left: 0;
+        transition: 0.7s cubic-bezier(0.9, 0.3, 0.3, 1.02);
+        li a {
+        	font-family: $font__avenir-heavy;
+			font-size: 26px;
+			line-height: 1.62;
+			color: #ffffff;
+        }
 	}
 }

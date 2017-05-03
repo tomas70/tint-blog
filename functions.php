@@ -110,6 +110,8 @@ function tint_blog_widgets_init() {
 function tint_blog_scripts() {
 	wp_enqueue_style( 'tint-blog-style', get_stylesheet_uri() );
 
+	wp_enqueue_script( 'tint-blog-scripts', get_template_directory_uri() . '/js/scripts.js', array(), '20151215', true );
+
 	wp_enqueue_script( 'tint-blog-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'tint-blog-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
@@ -181,6 +183,8 @@ require_once('wp_bootstrap_navwalker.php');
 // Add custom thumbnail sizes
 add_image_size( 'most-recent', 420, 270, true );
 add_image_size( 'recent-posts', 120, 100, true );
+add_image_size( 'archive-results', 230, 140, true );
+add_image_size( 'responsive-blog', 375, 245, true );
 
 add_filter( 'image_size_names', 'custom_sizes' );
  
@@ -189,4 +193,29 @@ function custom_sizes( $sizes ) {
         'most-recent' => __( 'Most Recent' ),
         'recent-posts' => __( 'Recent Posts' ),
     ) );
+}
+
+// Remove admin bar
+add_filter('show_admin_bar', '__return_false');
+
+// Add Twitter to author's bio
+function modify_contact_methods($profile_fields) {
+
+// Add new fields
+$profile_fields['twitter'] = 'Twitter Username';
+return $profile_fields;
+}
+add_filter('user_contactmethods', 'modify_contact_methods');
+
+// Add Disqus comments
+function disqus_embed($disqus_shortname, $post_id, $dposttitle) {
+    global $post;
+    wp_enqueue_script('disqus_embed','http://'.$disqus_shortname.'.disqus.com/embed.js');
+    echo '<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = "'.$disqus_shortname.'";
+        var disqus_title = "'.$dposttitle.'";
+        var disqus_url = "'.get_permalink($post_id).'";
+        var disqus_identifier = "'.$disqus_shortname.'-'.$post_id.'";
+    </script>';
 }

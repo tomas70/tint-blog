@@ -20,10 +20,14 @@ body {
 	padding-left: 0 !important;
 	padding-right: 0 !important;
 }
+.modalpadding {
+	padding-left: 0 !important;
+	padding-right: 15px !important;
+}
 .site-content {
 	margin-top: 62px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
 	.container-fluid {
 	    padding-right: 65px;
 	    padding-left: 65px; 

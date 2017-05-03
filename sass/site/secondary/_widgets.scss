@@ -5,4 +5,104 @@
 	select {
 		max-width: 100%;
 	}
+
+	&__input {
+		border-top-color: #fff !important;
+		border-left-color: #fff !important;
+		border-right-color: #fff !important;
+		border-bottom-color: #e4e4e4;
+		font-family: $font__avenir-medium;
+	    color: #3c3c40 !important;
+	    letter-spacing: 0.2px;
+	    font-size: 12px;
+
+		&:focus {
+			color: #3c3c40;
+			border-top-color: #fff;
+			border-left-color: #fff;
+			border-right-color: #fff;
+			border-bottom-color: #e4e4e4;
+			font-family: $font__avenir-medium;
+		    color: #3c3c40;
+		    letter-spacing: 0.2px;
+		    font-size: 12px;
+		}
+
+		&::-webkit-input-placeholder {
+			font-family: $font__avenir-medium;
+			color: #3c3c40;
+			letter-spacing: 0.2px;
+			font-size: 12px;
+		} 
+		&:-moz-placeholder {
+			font-family: $font__avenir-medium;
+		    color: #3c3c40;
+		    letter-spacing: 0.2px;
+		    font-size: 12px;
+		}			 
+		&::-moz-placeholder {
+			font-family: $font__avenir-medium;
+		    color: #3c3c40;
+		    letter-spacing: 0.2px;
+		    font-size: 12px;
+		}				 
+		&:-ms-input-placeholder {
+			font-family: $font__avenir-medium;
+		    color: #3c3c40;
+		    letter-spacing: 0.2px;
+		    font-size: 12px;
+		}
+	}
+
+	&-heading {
+		font-family: $font__avenir-medium;
+		font-size: 19px;
+		line-height: 1.42;
+		text-align: center;
+		color: #181818;
+	}
+
+	&-text {
+		font-family: $font__main;
+		font-size: 14px;
+		line-height: 1.36;
+		text-align: center;
+		color: #181818;
+	}
+}
+
+.subscribe-widget {
+	width: 298px;
+	border-radius: 2px;
+	border: solid 1px #e4e4e4;
+	margin: 0 auto;
+	padding: 35px 30px 50px 30px;
+
+	&--home {
+		width: 284px;
+	}
+}
+
+.modal-dialog {
+	max-width: 570px !important;
+	margin: 170px auto;
+}
+
+.modalcontent {
+	padding: 25px;
+}
+
+button.close {
+	position: absolute;
+    right: -10px;
+    top: -7px;
+    background: #e4e4e4;
+    width: 27px;
+    height: 27px;
+    opacity: 1;
+    color: #fff;
+
+    &:hover {
+    	opacity: 1;
+    }
 }

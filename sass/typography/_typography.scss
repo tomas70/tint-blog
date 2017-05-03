@@ -11,13 +11,16 @@ textarea {
 }
 strong {
 	font-family: $font__avenir-heavy;
-	color: #fc3d3b;
 }
 .entry-content {
-	p{
+	p {
 		font-size: 21px;
 		line-height: 1.57;
 		letter-spacing: normal;
+	}
+	.strong--red {
+		font-family: $font__avenir-heavy;
+		color: #fc3d3b;
 	}
 }
 

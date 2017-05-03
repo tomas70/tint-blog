@@ -51,6 +51,36 @@
 		"oAP": "\/comments.php",
 		"oF": 0
 		},
+	"\/editor-style-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/editor-style-min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/editor-style-shared.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/editor-style-shared-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/editor-style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/editor-style-min.css",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/footer.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -74,6 +104,16 @@
 		"oA": 2,
 		"oAP": "\/header.php",
 		"oF": 0
+		},
+	"\/img\/close-icon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/close-icon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/img\/comment-icon-white.png": {
 		"ft": 32768,
@@ -348,6 +388,15 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/js\/scripts.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/scripts-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/js\/skip-link-focus-fix.js": {
 		"ft": 64,
 		"mi": 1,
@@ -393,6 +442,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/LICENSE",
+		"oF": 0
+		},
+	"\/page-search.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-search.php",
 		"oF": 0
 		},
 	"\/page.php": {

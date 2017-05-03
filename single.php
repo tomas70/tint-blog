@@ -16,7 +16,7 @@ get_header(); ?>
 		$backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($recent["ID"]), 'full' );
 		}
 	?>
-	<div class="jumbotron jumbotron-fluid" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat; background-size: cover; height: 521px">
+	<div class="jumbotron jumbotron-fluid hidden-sm-down" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat; background-size: cover; height: 521px">
 		<div class="container-fluid valign">
 		<h3 class="jumbotron__heading-3">Most Recent</h3>
 		<?php
@@ -27,18 +27,39 @@ get_header(); ?>
 			}
 			wp_reset_query();
 		?>
-			<p class="jumbotron__paragraph"><span class="user-icon-white"> <?php the_author_posts_link(); ?></span> <span class="date-icon-white"> <?php the_time('jS F'); ?></span></p>
+			<p class="jumbotron__paragraph"><span class="user-icon-white"> <?php the_author_posts_link(); ?></span> <span class="date-icon-white"> <?php the_time('M j'); ?></span></p>
 		</div>
 	</div>
-	<div class="container-fluid nopadding">
+	<div class="container-fluid nopadding hidden-lg-down">
 		<div class="row align-items-center single-post-header">
 			<div class="col-md-9">
 				<p>Need help creating content quickly? Download our latest marketing guide!</p>
 			</div>
 			<div class="col-md-3">
-				<a href="" class="btn btn-download-ebook" role="button">Download eBook</a>
+				<a href="" data-toggle="modal" data-target="#downloadModal" class="btn btn-default" role="button">Download eBook</a>
 			</div>
 		</div>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="downloadModal" tabindex="-1" role="dialog" aria-labelledby="downloadModal" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="container-fluid modalpadding">
+	         <div class="row">
+				<div class="col-md-6 nopadding"><img src="http://tint-blog.dev/wp-content/uploads/2017/04/popup.png"></div>
+				<div class="col-md-6 modalcontent">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<p class="widget-heading">Need inspiration for your next social campaign?</p>
+				<p class="widget-text">Download our free hashtag creation checklist!</p>
+				<input class="form-control widget__input" type="email" placeholder="Your Email Address">
+				<a href="#" class="btn btn-default btn-default--modal" role="button">Craft the perfect hashtag</a>
+				</div>
+		    </div>
+	      </div>
+	    </div>
+	  </div>
 	</div>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -46,15 +67,13 @@ get_header(); ?>
 				<div class="row">
 					<div class="col">
 						<div class="row">
-							<div class="col-md-9">
+							<div class="col-md-12 col-lg-8">
 								<div class="row">
 									<div class="col">
 									<?php
 									while ( have_posts() ) : the_post();
 
 										get_template_part( 'template-parts/content', get_post_format() );
-
-										the_post_navigation();
 
 										// If comments are open or we have at least one comment, load up the comment template.
 										if ( comments_open() || get_comments_number() ) :
@@ -65,12 +84,12 @@ get_header(); ?>
 									?>
 									</div>
 								</div>
-							<div class="col-md-3 sidebar">
+							</div>
+							<div class="col-md-4 sidebar hidden-md-down">
 				 				<?php if ( is_active_sidebar( 'post-sidebar' ) ) : ?>
 				 						<?php dynamic_sidebar( 'post-sidebar' ); ?>
 				 				<?php endif; ?>
 				 			</div>
-							</div>
 						</div>
 					</div>
 				</div>

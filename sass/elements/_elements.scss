@@ -40,3 +40,26 @@ figure {
 }
 
 @import "tables";
+
+.btn-default {
+	font-family: $font__avenir-black;
+	font-size: 12px;
+	letter-spacing: 0.4px;
+	padding: 10px 65px 9px;
+	background-color: #ff564b;
+	border-radius: 100px;
+	color: #fff;
+
+	&--subscribe {
+		margin-top: 40px;
+	}
+
+	&--modal {
+		margin-top: 30px;
+		padding: 10px 40px 9px;
+	} 
+
+	&:active, &:focus, &:visited, &:hover {
+		color: #fff;
+	}
+}

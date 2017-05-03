@@ -16,55 +16,51 @@
 	<footer id="colophon" class="site-footer hidden-md-down" role="contentinfo">
 		<div class="container-fluid nopadding">
             <div class="row footer-nav">
-                <div class="container">
-                    <div class="row">
-                    <div class="col-md-2 offset-md-1">
-                        <h3>Product</h3>
-                        <ul class="list-group hidden-sm-down">
-                            <li><a href="">Features</a></li>
-                            <li><a href="">Use Cases</a></li>
-                            <li><a href="">Integrations</a></li>
-                            <li><a href="">Security</a></li>
-                            <li><a href="">Support</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-2">
-                        <h3>Free Tools</h3>
-                        <ul class="list-group hidden-sm-down">
-                            <li><a href="">Instagram Contest Tool</a></li>
-                            <li><a href="">Hashtag Report</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-2">
-                        <h3>Resources</h3>
-                        <ul class="list-group hidden-sm-down">
-                            <li><a href="">Case Studies</a></li>
-                            <li><a href="">Webinars</a></li>
-                            <li><a href="">eBooks</a></li>
-                            <li><a href="">Blog</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-2">
-                        <h3>Company</h3>
-                        <ul class="list-group hidden-sm-down">
-                            <li><a href="">About Us</a></li>
-                            <li><a href="">Our Clients</a></li>
-                            <li><a href="">In the Press</a></li>
-                            <li><a href="">Industries</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-2">
-                        <h3>Connect</h3>
-                        <ul class="list-group hidden-sm-down">
-                            <li><a href="">Contact Us</a></li>
-                            <li><a href="">Partnerships</a></li>
-                            <li><a href="">Careers</a></li>
-                            <li><i class="fa fa-twitter" aria-hidden="true"></i> <i class="fa fa-linkedin" aria-hidden="true"></i> <i class="fa fa-facebook" aria-hidden="true"></i> <i class="fa fa-instagram" aria-hidden="true"></i></li>
-                        </ul>
-                        <div class="follow-red hidden-sm-up">
-                            <i class="fa fa-twitter" aria-hidden="true"></i> <i class="fa fa-linkedin" aria-hidden="true"></i> <i class="fa fa-facebook" aria-hidden="true"></i> <i class="fa fa-instagram" aria-hidden="true"></i></li>
-                        </div>
-                    </div>
+                <div class="col-md-2 offset-md-1">
+                    <h3>Product</h3>
+                    <ul class="list-group hidden-sm-down">
+                        <li><a href="">Features</a></li>
+                        <li><a href="">Use Cases</a></li>
+                        <li><a href="">Integrations</a></li>
+                        <li><a href="">Security</a></li>
+                        <li><a href="">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h3>Free Tools</h3>
+                    <ul class="list-group hidden-sm-down">
+                        <li><a href="">Instagram Contest Tool</a></li>
+                        <li><a href="">Hashtag Report</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h3>Resources</h3>
+                    <ul class="list-group hidden-sm-down">
+                        <li><a href="">Case Studies</a></li>
+                        <li><a href="">Webinars</a></li>
+                        <li><a href="">eBooks</a></li>
+                        <li><a href="">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h3>Company</h3>
+                    <ul class="list-group hidden-sm-down">
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Our Clients</a></li>
+                        <li><a href="">In the Press</a></li>
+                        <li><a href="">Industries</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h3>Connect</h3>
+                    <ul class="list-group hidden-sm-down">
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Partnerships</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><i class="fa fa-twitter" aria-hidden="true"></i> <i class="fa fa-linkedin" aria-hidden="true"></i> <i class="fa fa-facebook" aria-hidden="true"></i> <i class="fa fa-instagram" aria-hidden="true"></i></li>
+                    </ul>
+                    <div class="follow-red hidden-sm-up">
+                        <i class="fa fa-twitter" aria-hidden="true"></i> <i class="fa fa-linkedin" aria-hidden="true"></i> <i class="fa fa-facebook" aria-hidden="true"></i> <i class="fa fa-instagram" aria-hidden="true"></i></li>
                     </div>
                 </div>
             </div>
@@ -136,7 +132,7 @@
             });
         });
     </script>
-    <div class="container-fluid footer-up hidden-sm-up">
+    <div class="container-fluid footer-up">
         <div class="row">
             <div class="col-12">
                 <form class="form-inline justify-content-center align-middle">

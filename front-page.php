@@ -8,7 +8,7 @@
  */
 
 get_header(); ?>
-<div class="hidden-md-down">
+<div class="hidden-sm-down">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-8 menu--secondary">
@@ -31,7 +31,7 @@ get_header(); ?>
 			}
 			wp_reset_query();
 		?>
-			<p class="jumbotron__paragraph"><span class="user-icon-white"> <?php the_author_posts_link(); ?></span> <span class="date-icon-white"> <?php the_time('jS F'); ?></span></p>
+			<p class="jumbotron__paragraph"><span class="user-icon-white"> <?php the_author_posts_link(); ?></span> <span class="date-icon-white"> <?php the_time('M j'); ?></span></p>
 		</div>
 	</div>
 
@@ -43,9 +43,13 @@ get_header(); ?>
 					<div class="row">
 						<div class="col-md-8">
 							<div class="row">
-							<?php $i = 0; query_posts('cat=1&posts_per_page=4&offset=1'); ?>
+							<?php
+							$category_id = 2; 
+							$category_link = get_category_link( $category_id );
+							$i = 0; 
+							query_posts('cat=2&posts_per_page=4'); ?>
 									<div class="col-12 strike-right">
-										<h3 class="strike-right__heading-3"><?php the_category(); ?></h3>
+										<h3 class="strike-right__heading-3"><a href="<?php echo esc_url( $category_link ); ?>" title="Category Name"><?php echo get_cat_name( $category_id ); ?></a></h3>
 									</div>
 								<div class="col-md-7">
 								<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $i++ ?>
@@ -53,7 +57,7 @@ get_header(); ?>
 									<div class="col-md-12 cat-recent-post">
 										<?php the_post_thumbnail('most-recent'); ?>
 										<h2 class="cat-recent-post__heading-2"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-										<p class="cat-recent-post__paragraph"><span class="user-icon-black"> <?php the_author_posts_link(); ?></span> <span class="date-icon-black"> <?php the_time('jS F'); ?></span></p>
+										<p class="cat-recent-post__paragraph"><span class="user-icon-black"> <?php the_author_posts_link(); ?></span> <span class="date-icon-black"> <?php the_time('M j'); ?></span></p>
 									</div>
 								</div>
 								<div class="col-md-5">
@@ -66,7 +70,7 @@ get_header(); ?>
 												</div>
 												<div class="col nopadding">
 													<h3 class="cat-posts__heading-3"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
-													<p class="cat-posts__paragraph"><span class="user-icon-black"> <?php the_author_posts_link(); ?></span> <span class="date-icon-black"> <?php the_time('jS F'); ?></span></p>
+													<p class="cat-posts__paragraph"><span class="user-icon-black"> <?php the_author_posts_link(); ?></span> <span class="date-icon-black"> <?php the_time('M j'); ?></span></p>
 												</div>
 											</div>
 										</div>
@@ -75,25 +79,25 @@ get_header(); ?>
 									</div>
 								</div>
 							<div class="col-12 strike-left">
-								<?php
-								    $category_id = 1;
-								    $category_link = get_category_link( $category_id );
-								?>
 								<a class="strike-left__see-all" href="<?php echo esc_url( $category_link ); ?>" title="Category Name">See All Posts</a>
 							</div>
 							</div>
 							<div class="row">
-							<?php $i = 0; query_posts('cat=1&posts_per_page=4&offset=1'); ?>
+							<?php
+							$category_id = 3; 
+							$category_link = get_category_link( $category_id );
+							$k = 0; 
+							query_posts('cat=3&posts_per_page=4'); ?>
 									<div class="col-12 strike-right">
-										<h3 class="strike-right__heading-3"><?php the_category(); ?></h3>
+										<h3 class="strike-right__heading-3"><a href="<?php echo esc_url( $category_link ); ?>" title="Category Name"><?php echo get_cat_name( $category_id ); ?></a></h3>
 									</div>
 								<div class="col-md-7">
-								<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $i++ ?>
-									<?php if ($i == 1) { ?>
+								<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $k++ ?>
+									<?php if ($k == 1) { ?>
 									<div class="col-md-12 cat-recent-post">
 										<?php the_post_thumbnail('most-recent'); ?>
 										<h2 class="cat-recent-post__heading-2"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-										<p class="cat-recent-post__paragraph"><span class="user-icon-black"> <?php the_author_posts_link(); ?></span> <span class="date-icon-black"> <?php the_time('jS F'); ?></span></p>
+										<p class="cat-recent-post__paragraph"><span class="user-icon-black"> <?php the_author_posts_link(); ?></span> <span class="date-icon-black"> <?php the_time('M j'); ?></span></p>
 									</div>
 								</div>
 								<div class="col-md-5">
@@ -106,7 +110,7 @@ get_header(); ?>
 												</div>
 												<div class="col nopadding">
 													<h3 class="cat-posts__heading-3"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
-													<p class="cat-posts__paragraph"><span class="user-icon-black"> <?php the_author_posts_link(); ?></span> <span class="date-icon-black"> <?php the_time('jS F'); ?></span></p>
+													<p class="cat-posts__paragraph"><span class="user-icon-black"> <?php the_author_posts_link(); ?></span> <span class="date-icon-black"> <?php the_time('M j'); ?></span></p>
 												</div>
 											</div>
 										</div>
@@ -115,25 +119,25 @@ get_header(); ?>
 									</div>
 								</div>
 							<div class="col-12 strike-left">
-								<?php
-								    $category_id = 1;
-								    $category_link = get_category_link( $category_id );
-								?>
 								<a class="strike-left__see-all" href="<?php echo esc_url( $category_link ); ?>" title="Category Name">See All Posts</a>
 							</div>
 							</div>
 							<div class="row">
-							<?php $i = 0; query_posts('cat=1&posts_per_page=4&offset=1'); ?>
+							<?php
+							$category_id = 4; 
+							$category_link = get_category_link( $category_id );
+							$m = 0; 
+							query_posts('cat=4&posts_per_page=4'); ?>
 									<div class="col-12 strike-right">
-										<h3 class="strike-right__heading-3"><?php the_category(); ?></h3>
+										<h3 class="strike-right__heading-3"><a href="<?php echo esc_url( $category_link ); ?>" title="Category Name"><?php echo get_cat_name( $category_id ); ?></a></h3>
 									</div>
 								<div class="col-md-7">
-								<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $i++ ?>
-									<?php if ($i == 1) { ?>
+								<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $m++ ?>
+									<?php if ($m == 1) { ?>
 									<div class="col-md-12 cat-recent-post">
 										<?php the_post_thumbnail('most-recent'); ?>
 										<h2 class="cat-recent-post__heading-2"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-										<p class="cat-recent-post__paragraph"><span class="user-icon-black"> <?php the_author_posts_link(); ?></span> <span class="date-icon-black"> <?php the_time('jS F'); ?></span></p>
+										<p class="cat-recent-post__paragraph"><span class="user-icon-black"> <?php the_author_posts_link(); ?></span> <span class="date-icon-black"> <?php the_time('M j'); ?></span></p>
 									</div>
 								</div>
 								<div class="col-md-5">
@@ -146,7 +150,7 @@ get_header(); ?>
 												</div>
 												<div class="col nopadding">
 													<h3 class="cat-posts__heading-3"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
-													<p class="cat-posts__paragraph"><span class="user-icon-black"> <?php the_author_posts_link(); ?></span> <span class="date-icon-black"> <?php the_time('jS F'); ?></span></p>
+													<p class="cat-posts__paragraph"><span class="user-icon-black"> <?php the_author_posts_link(); ?></span> <span class="date-icon-black"> <?php the_time('M j'); ?></span></p>
 												</div>
 											</div>
 										</div>
@@ -155,10 +159,6 @@ get_header(); ?>
 									</div>
 								</div>
 							<div class="col-12 strike-left">
-								<?php
-								    $category_id = 1;
-								    $category_link = get_category_link( $category_id );
-								?>
 								<a class="strike-left__see-all" href="<?php echo esc_url( $category_link ); ?>" title="Category Name">See All Posts</a>
 							</div>
 							</div>
@@ -175,7 +175,7 @@ get_header(); ?>
 	</main><!-- #main -->
 </div><!-- #primary -->
 </div>
-<div class="hidden-sm-up">
+<div class="hidden-md-up">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col menu--secondary menu--tertiary">
@@ -186,15 +186,20 @@ get_header(); ?>
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-12 nopadding">
-				<?php the_post_thumbnail(); ?>
+			<div class="col-12 nopadding responsive-thumb">
+				<?php the_post_thumbnail('responsive-blog'); ?>
 			</div>
 		</div>
 	</div>
-	<div class="container">
+	<div class="container responsive-post">
 		<div class="col-12 cat-posts">
-			<h3 class="cat-posts__heading-3"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
-			<p class="cat-posts__paragraph"><span class="user-icon-black"> <?php the_author_posts_link(); ?></span> <span class="date-icon-black"> <?php the_time('F j'); ?></span> <span class="cat-icon-black"><?php foreach((get_the_category()) as $category) { echo $category->cat_name . ' '; } ?> </span></p>
+			<div class="responsive-post__content">
+				<h3 class="cat-posts__heading-3"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
+				<p class="cat-posts__paragraph"><span class="user-icon-black"> <?php the_author_posts_link(); ?></span> <span class="date-icon-black"> <?php the_time('F j'); ?></span> <span class="cat-icon-black"><?php $categories = get_the_category();
+					if ( ! empty( $categories ) ) {
+					    echo '<a href="' . esc_url( get_category_link( $categories[0]->term_id ) ) . '">' . esc_html( $categories[0]->name ) . '</a>';
+					} ?> </span></p>
+			</div>
 		</div>
 	</div>
 	<?php endwhile; endif; ?>

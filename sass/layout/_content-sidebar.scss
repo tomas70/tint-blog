@@ -24,6 +24,10 @@
 .sidebar {
 	text-align: center;
 
+	@media screen and (max-width: 1199px) {
+		padding-top: 25px;
+	}
+
 	li {
 		list-style: none;
 	}
